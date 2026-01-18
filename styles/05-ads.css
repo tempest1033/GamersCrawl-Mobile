@@ -1,0 +1,149 @@
+/* ===== Ads (AdSense) - PC/모바일 분리 방식 ===== */
+/* ins 태그 스타일은 인라인으로만 관리 (Google 권장 방식) */
+/* CSS는 컨테이너(.ad-card)만 관리 */
+
+/* ===== 광고 컨테이너 크기 ===== */
+
+/* 모바일 상단 광고 (320x100) */
+.ad-card-mobile-top {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 모바일 중간 광고 (300x250) */
+.ad-card-mobile-mid {
+  width: 100%;
+  height: 250px;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PC 홈 상단 광고 (728x90) */
+.ad-card-pc-home {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PC 상단 광고 (970x90) */
+.ad-card-pc {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PC 사이드바 - Vertical (300x600) */
+.ad-card-vertical {
+  width: 300px;
+  height: 600px;
+  border-radius: 0;
+}
+
+/* PC 사이드바 - Rectangle (300x250) */
+.ad-card-rectangle {
+  width: 300px;
+  height: 250px;
+  border-radius: 0;
+}
+
+/* 네이티브 In-feed 광고 (fluid) */
+.ad-card-native {
+  width: 100%;
+  min-height: 100px;
+}
+
+/* ===== PC/모바일 표시 규칙 ===== */
+/* 인라인 <style> 태그에서 media query로 처리 (Google AdSense 권장 방식) */
+/* ads.js의 각 광고 함수에서 .adslot-* 클래스로 크기/숨김 제어 */
+
+/* ===== 광고 카드 공통 스타일 ===== */
+
+.ad-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: inset 0 0 0 1px var(--border);
+  touch-action: pan-x pan-y;
+  position: relative;
+}
+
+
+/* ===== 광고 여백 ===== */
+
+/* 기본: 상단 마진 (컨테이너 외부 광고) */
+main .ad-card {
+  margin: var(--space-block-gap, 16px) 0 0 0;
+}
+
+/* page-container 첫 번째 광고 (top): 상단 마진 유지 */
+.page-container > .ad-card:first-child {
+  margin: var(--space-block-gap, 16px) 0 0 0;
+}
+
+/* page-container 중간 광고 (mid): gap이 간격 담당하므로 마진 0 */
+.page-container > .ad-card:not(:first-child),
+.page-container .ad-card:not(:first-child) {
+  margin: 0;
+}
+
+/* ===== 홈 페이지 (PC) ===== */
+
+/* home-container (PC 2컬럼): 광고 마진 */
+.home-main .ad-card,
+.home-sidebar .ad-card {
+  margin: 0;
+}
+
+/* 모바일 홈: 사이드바 숨김 (PC 전용) */
+@media (max-width: 768px) {
+  .home-sidebar {
+    display: none !important;
+  }
+}
+
+/* ===== 주간/일간 리포트 내부 광고 ===== */
+.weekly-report .ad-card {
+  margin: var(--space-block-gap, 16px) 0;
+}
+
+/* ===== Unfilled 광고 처리 ===== */
+
+/* 상단 광고 (top): unfilled 시 기존 카드 스타일 유지 + 무채색 파비콘 */
+.ad-card-pc:has(ins[data-ad-status="unfilled"]),
+.ad-card-pc-home:has(ins[data-ad-status="unfilled"]),
+.ad-card-mobile-top:has(ins[data-ad-status="unfilled"]) {
+  background: var(--card);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.ad-card-pc:has(ins[data-ad-status="unfilled"])::before,
+.ad-card-pc-home:has(ins[data-ad-status="unfilled"])::before,
+.ad-card-mobile-top:has(ins[data-ad-status="unfilled"])::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background: url('/favicon.svg') center/contain no-repeat;
+  filter: grayscale(1);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+/* 중간/사이드바/네이티브 광고: unfilled 시 카드까지 숨김 */
+.ad-card-mobile-mid:has(ins[data-ad-status="unfilled"]),
+.ad-card-vertical:has(ins[data-ad-status="unfilled"]),
+.ad-card-rectangle:has(ins[data-ad-status="unfilled"]),
+.ad-card-native:has(ins[data-ad-status="unfilled"]) {
+  display: none;
+}

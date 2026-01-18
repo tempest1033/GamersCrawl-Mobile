@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="robots" content="noindex, nofollow">
+	  <!-- Critical CSS: 레이아웃(폭) 선적용 (Auto ads/Side rail 첫 로드 안정화) -->
+	  <style>
+	    :root { --space-page-x: 16px; }
+	    body { margin: 0; }
+	    :is(.site-container, .container) {
+	      max-width: 1190px;
+	      margin: 0 auto;
+	      padding-left: var(--space-page-x);
+	      padding-right: var(--space-page-x);
+	      box-sizing: border-box;
+	    }
+	    .header-inner {
+	      max-width: 1190px;
+	      margin: 0 auto;
+	      padding: 0 16px;
+	      box-sizing: border-box;
+	    }
+	    .nav-inner {
+	      max-width: 1190px;
+	      margin: 0 auto;
+	      padding: 0 var(--space-page-x);
+	      box-sizing: border-box;
+	    }
+	    @media (max-width: 768px) {
+	      body { width: 100%; max-width: 100vw; overscroll-behavior-x: none; }
+	      .header, .header-inner, .nav-inner { width: 100%; max-width: 100%; }
+	      .nav, .container, .site-container { width: 100%; max-width: 100%; }
+	    }
+	  </style>
+		  <script>
+		    (function() {
+		      var host = location.hostname;
+		      if (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0') {
+		        document.documentElement.classList.add('is-localhost');
+		      } else if (host === 'gamerscrawl.com' || host === 'www.gamerscrawl.com') {
+		        var ua = navigator.userAgent || '';
+		        if (/Android|iPhone|iPad|iPod|Mobile|webOS|BlackBerry|IEMobile|Opera Mini/i.test(ua)) {
+		          location.replace('https://m.gamerscrawl.com' + location.pathname + location.search);
+		          return;
+		        }
+		      }
+		    })();
+		  </script>
+		  <title>데이터 필요없는 게임 - 와이파이 필요없는 게임 매출, 모바일 게임 순위, 뉴스</title>
+  <!-- SEO -->
+  <meta name="description" content="데이터 필요없는 게임 - 와이파이 필요없는 게임 매출, 모바일 게임 순위와 뉴스, 히스토리를 한눈에.">
+  <meta name="keywords" content="데이터 필요없는 게임 - 와이파이 필요없는 게임, 데이터 필요없는 게임 - 와이파이 필요없는 게임 매출, 데이터 필요없는 게임 - 와이파이 필요없는 게임 순위, 모바일 게임 순위, 데이터 필요없는 게임 - 와이파이 필요없는 게임 앱스토어, 데이터 필요없는 게임 - 와이파이 필요없는 게임 플레이스토어, 앱스토어 순위, 플레이스토어 순위, 앱스토어 매출 순위, 플레이스토어 매출 순위, 게임 뉴스">
+  <link rel="canonical" href="https://m.gamerscrawl.com/games/데이터-필요없는-게임-와이파이-필요없는-게임/">
+  <!-- JSON-LD 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "게이머스크롤",
+    "alternateName": ["GAMERSCRAWL", "GAMERS CRAWL", "gamerscrawl.com", "게이머스크롤", "게이머 스크롤"],
+    "url": "https://gamerscrawl.com/",
+    "description": "데이터 필요없는 게임 - 와이파이 필요없는 게임 매출, 모바일 게임 순위와 뉴스, 히스토리를 한눈에.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "게이머스크롤",
+      "url": "https://gamerscrawl.com/"
+    }
+  }
+  </script>
+  <!-- Open Graph / SNS 공유 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="데이터 필요없는 게임 - 와이파이 필요없는 게임 매출, 모바일 게임 순위, 뉴스">
+  <meta property="og:description" content="데이터 필요없는 게임 - 와이파이 필요없는 게임 매출, 모바일 게임 순위와 뉴스, 히스토리를 한눈에.">
+  <meta property="og:image" content="https://gamerscrawl.com/og-image.png">
+  <meta property="og:url" content="https://m.gamerscrawl.com/games/데이터-필요없는-게임-와이파이-필요없는-게임/">
+  <meta property="og:site_name" content="게이머스크롤">
+  <meta property="og:locale" content="ko_KR">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="데이터 필요없는 게임 - 와이파이 필요없는 게임 매출, 모바일 게임 순위, 뉴스">
+  <meta name="twitter:description" content="데이터 필요없는 게임 - 와이파이 필요없는 게임 매출, 모바일 게임 순위와 뉴스, 히스토리를 한눈에.">
+  <meta name="twitter:image" content="https://gamerscrawl.com/og-image.png">
+  <meta name="twitter:site" content="@gamerscrawl">
+  <meta name="twitter:creator" content="@gamerscrawl">
+  <!-- Theme & Favicon -->
+  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png">
+  <link rel="manifest" href="/manifest.json">
+  <!-- preconnect: AdSense + 광고 요청 + 폰트 CDN -->
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <!-- dns-prefetch: fallback + 이미지 CDN -->
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+  <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
+  <link rel="dns-prefetch" href="https://adservice.google.com">
+  <link rel="dns-prefetch" href="https://tpc.googlesyndication.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://play-lh.googleusercontent.com">
+  <link rel="dns-prefetch" href="https://is1-ssl.mzstatic.com">
+  <link rel="dns-prefetch" href="https://i.ytimg.com">
+  <link rel="dns-prefetch" href="https://cdn.cloudflare.steamstatic.com">
+	  <!-- Prefetch (load 이후, 네트워크 여건이 좋을 때만) -->
+	  <script>
+	    (function() {
+	      var urls = ['/trend/', '/news/', '/community/', '/youtube/', '/rankings/', '/steam/', '/upcoming/', '/metacritic/'];
+	      function shouldPrefetch() {
+	        var c = navigator.connection;
+	        if (!c) return true;
+	        if (c.saveData) return false;
+	        var type = String(c.effectiveType || '').toLowerCase();
+	        if (type.includes('2g')) return false;
+	        return true;
+	      }
+	      function addPrefetch() {
+	        if (!shouldPrefetch()) return;
+	        for (var i = 0; i < urls.length; i++) {
+	          var link = document.createElement('link');
+	          link.rel = 'prefetch';
+	          link.as = 'document';
+	          link.href = urls[i];
+	          document.head.appendChild(link);
+	        }
+	      }
+	      window.addEventListener('load', addPrefetch);
+	    })();
+	  </script>
+	  <!-- Font Preload -->
+		  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+		  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
+		  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+			  <link rel="stylesheet" href="/styles.css">
+	  <!-- AdSense 스크립트 (async 권장) -->
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+		  <script async fetchpriority="low" src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+	  <!-- Firebase Analytics (프로덕션만) -->
+	  <script>
+	    // 페이지뷰 큐 (Firebase 로드 전 이벤트 저장) - 일반 스크립트로 즉시 실행
+	    (function() {
+	      var host = window.location.hostname;
+	      if (host !== 'gamerscrawl.com' && host !== 'm.gamerscrawl.com') return;
+	      window.__gcPageViewQueue = [];
+	      window.__gcLogPageView = function(path) {
+	        window.__gcPageViewQueue.push(path);
+	      };
+	    })();
+	  </script>
+	  <script type="module">
+	    (function() {
+	      var host = window.location.hostname;
+	      if (host !== 'gamerscrawl.com' && host !== 'm.gamerscrawl.com') return;
+
+	      (async function() {
+	        try {
+	          const [{ initializeApp }, { getAnalytics, logEvent }] = await Promise.all([
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js'),
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js')
+	          ]);
+	          const firebaseConfig = {
+	            apiKey: "AIzaSyBlVfvAGVrhEEMPKpDKJBrOPF7BINleV7I",
+	            authDomain: "gamerscrawl-b104b.firebaseapp.com",
+	            projectId: "gamerscrawl-b104b",
+	            storageBucket: "gamerscrawl-b104b.firebasestorage.app",
+	            messagingSenderId: "831886529376",
+	            appId: "1:831886529376:web:2d9f0f64782fa5e5e80405",
+	            measurementId: "G-2269FV044J"
+	          };
+	          const app = initializeApp(firebaseConfig);
+	          const analytics = getAnalytics(app);
+
+	          // 큐에 쌓인 페이지뷰 처리
+	          if (window.__gcPageViewQueue) {
+	            window.__gcPageViewQueue.forEach(function(path) {
+	              logEvent(analytics, 'page_view', {
+	                page_path: path,
+	                page_location: window.location.origin + path
+	              });
+	            });
+	          }
+
+	          // 실제 로깅 함수로 교체
+	          window.__gcLogPageView = function(path) {
+	            logEvent(analytics, 'page_view', {
+	              page_path: path,
+	              page_location: window.location.origin + path
+	            });
+	          };
+
+	          // 초기 페이지 로드 page_view 전송 (직접 접속 시)
+	          logEvent(analytics, 'page_view', {
+	            page_path: window.location.pathname,
+	            page_location: window.location.href
+	          });
+	        } catch (e) {}
+	      })();
+	    })();
+	  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+</head>
+<body class="page-game is-mobile">
+  
+  <header class="header">
+	    <div class="header-inner">
+	      <div class="header-title">
+	        <a href="/">
+	          <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
+	          <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+	            <defs>
+	              <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+	                <stop offset="0%" stop-color="#4f46e5" />
+	                <stop offset="100%" stop-color="#06b6d4" />
+	              </linearGradient>
+	            </defs>
+            <text class="logo-text-svg" x="50%" y="50%" dy="2" font-family="'Pretendard', -apple-system, sans-serif" font-size="62" font-weight="900" fill="currentColor" text-anchor="middle" dominant-baseline="middle" letter-spacing="-0.5">GAMERS CRAWL</text>
+            <!-- 왼쪽 안테나 -->
+            <rect x="8" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
+            <rect x="26" y="15" width="10" height="42" rx="5" fill="url(#techGrad)" opacity="0.7"/>
+            <rect x="44" y="6" width="10" height="60" rx="5" fill="url(#techGrad)"/>
+            <!-- 오른쪽 안테나 -->
+            <rect x="606" y="6" width="10" height="60" rx="5" fill="url(#techGrad)"/>
+            <rect x="624" y="15" width="10" height="42" rx="5" fill="url(#techGrad)" opacity="0.7"/>
+            <rect x="642" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="search-container">
+    <div class="search-box">
+      <a href="/" class="search-home-icon" aria-label="홈으로 이동">
+        <img src="/favicon.svg" alt="" width="20" height="20">
+      </a>
+      <input type="text" class="search-input" placeholder="게임 검색" autocomplete="off">
+      <button class="search-btn" type="button" aria-label="검색">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </button>
+    </div>
+    <div class="search-dropdown"></div>
+  </div>
+  
+  <nav class="nav">
+    <div class="nav-inner">
+      
+      <a class="nav-item" href="/trend/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        뉴스
+      </a>
+      <a class="nav-item" href="/games/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        게임 DB
+      </a>
+      <a class="nav-item" href="/rankings/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+        모바일 순위
+      </a>
+      <a class="nav-item" href="/steam/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12h.01M18 12h.01"/><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 6v12"/></svg>
+        스팀 순위
+      </a>
+      <a class="nav-item" href="/youtube/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        영상 순위
+      </a>
+      <a class="nav-item" href="/upcoming/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        출시 게임
+      </a>
+      <a class="nav-item" href="/metacritic/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        메타크리틱
+      </a>
+    </div>
+  </nav>
+  
+<script>
+(function() {
+  var KEY = 'gc_nav_scroll_state_v1';
+  var MAX_AGE_MS = 60000;
+
+  function save() {
+    try {
+      var overrideLeft = window.__gcNavScrollOverrideLeft;
+      var overrideAt = window.__gcNavScrollOverrideAt;
+      if (typeof overrideLeft === 'number' && isFinite(overrideLeft)) {
+        sessionStorage.setItem(KEY, JSON.stringify({ left: overrideLeft, at: overrideAt || Date.now() }));
+        window.__gcNavScrollOverrideLeft = null;
+        window.__gcNavScrollOverrideAt = null;
+        return;
+      }
+
+      var navInner = document.querySelector('.nav-inner');
+      if (!navInner) return;
+      var state = { left: navInner.scrollLeft || 0, at: Date.now() };
+      sessionStorage.setItem(KEY, JSON.stringify(state));
+    } catch (e) {}
+  }
+
+  function restore() {
+    try {
+      var raw = sessionStorage.getItem(KEY);
+      if (!raw) return;
+      var state = null;
+      try { state = JSON.parse(raw); } catch (e) { return; }
+      if (!state) return;
+
+      var at = parseInt(state.at, 10) || 0;
+      if (at && (Date.now() - at) > MAX_AGE_MS) {
+        try { sessionStorage.removeItem(KEY); } catch (e) {}
+        return;
+      }
+
+      var left = parseFloat(state.left);
+      if (!isFinite(left)) left = 0;
+
+      var navInner = document.querySelector('.nav-inner');
+      if (!navInner) return;
+      navInner.scrollLeft = left;
+      window.__gcNavScrollRestored = '1';
+      window.__gcNavPrevScrollLeft = left;
+      try { sessionStorage.removeItem(KEY); } catch (e) {}
+    } catch (e) {}
+  }
+
+  // nav 렌더 직후 즉시 복원
+  restore();
+
+  // nav 클릭/페이지 이탈 시 상태 저장
+  document.addEventListener('click', function(e) {
+    var link = e.target && e.target.closest ? e.target.closest('a.nav-item') : null;
+    if (!link) return;
+    save();
+  }, true);
+  window.addEventListener('pagehide', save);
+})();
+</script>
+  <main class="site-container">
+    
+    
+    <section class="section active" id="game">
+
+      <div class="page-container game-page-grid">
+        <div class="ad-card ad-card-mobile-top ad-lazy">
+  <ins class="adsbygoogle"
+       style="display:inline-block;min-width:320px;min-height:100px"
+       data-ad-client="ca-pub-9477874183990825"
+       data-ad-slot="5825162341"></ins>
+</div>
+        <h1 class="visually-hidden">데이터 필요없는 게임 - 와이파이 필요없는 게임 매출, 모바일 게임 순위, 뉴스</h1>
+        <!-- 게임 히어로 -->
+        <div class="home-card game-hero grid-full">
+          <div class="game-hero-content">
+            <img class="game-hero-icon" src="https://play-lh.googleusercontent.com/UoBeMWwIeHSxGAx1EhmvWrG1lkzlG78UByGwEkEhRlp40udqC0hHJeRTl266g9aG-A" alt="데이터 필요없는 게임 - 와이파이 필요없는 게임" loading="lazy" data-img-fallback="hide">
+            <div class="game-hero-info">
+              <div class="game-hero-title">데이터 필요없는 게임 - 와이파이 필요없는 게임</div>
+              <div class="game-hero-developer">JindoBlu</div>
+              <div class="game-hero-platforms"><span class="game-platform-badge">iOS</span><span class="game-platform-badge">Android</span></div>
+            </div>
+            <a href="/games/" class="game-back-btn" title="게임 DB로 돌아가기">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </a>
+            
+          </div>
+        </div>
+
+        
+        <!-- 모바일 게임 순위 카드 -->
+        <div class="home-card">
+          <div class="home-card-header">
+            <h2 class="home-card-title">모바일 게임 순위</h2>
+          </div>
+          <div class="home-card-body"><div class="rank-trend-section realtime-rank-section"><div class="trend-tab-row"><div class="tab-group trend-tabs-left"><button class="tab-btn active" data-realtime-cat="grossing">매출</button><button class="tab-btn" data-realtime-cat="free">인기</button></div><div class="tab-group trend-tabs-right"><button class="tab-btn active" data-realtime-view="summary">요약</button><button class="tab-btn disabled" data-realtime-view="realtime" disabled>실시간</button></div></div><div class="trend-legend-row realtime-legend-row is-hidden"><div class="trend-legend"><span class="trend-legend-item active" data-legend="kr"><span class="legend-dot" data-region="kr"></span>한국</span><span class="trend-legend-item active" data-legend="jp"><span class="legend-dot" data-region="jp"></span>일본</span><span class="trend-legend-item active" data-legend="us"><span class="legend-dot" data-region="us"></span>미국</span><span class="trend-legend-item active" data-legend="cn"><span class="legend-dot" data-region="cn"></span>중국</span><span class="trend-legend-item active" data-legend="tw"><span class="legend-dot" data-region="tw"></span>대만</span></div><div class="trend-market-toggle"><button class="market-toggle-btn active" data-market-toggle="ios">iOS</button><button class="market-toggle-btn" data-market-toggle="aos">Android</button></div></div><div class="realtime-content active" data-realtime-cat="grossing" data-realtime-view="summary"><div class="game-rank-grid"><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=apple.com&sz=32" alt="">iOS</div><div class="game-rank-rows"><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇰🇷</span>
+          <span class="game-rank-country-name">한국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇯🇵</span>
+          <span class="game-rank-country-name">일본</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇺🇸</span>
+          <span class="game-rank-country-name">미국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇨🇳</span>
+          <span class="game-rank-country-name">중국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇹🇼</span>
+          <span class="game-rank-country-name">대만</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div></div></div><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=play.google.com&sz=32" alt="">Android</div><div class="game-rank-rows"><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇰🇷</span>
+          <span class="game-rank-country-name">한국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇯🇵</span>
+          <span class="game-rank-country-name">일본</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇺🇸</span>
+          <span class="game-rank-country-name">미국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇨🇳</span>
+          <span class="game-rank-country-name">중국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇹🇼</span>
+          <span class="game-rank-country-name">대만</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div></div></div></div></div><div class="realtime-content" data-realtime-cat="free" data-realtime-view="summary"><div class="game-rank-grid"><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=apple.com&sz=32" alt="">iOS</div><div class="game-rank-rows"><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇰🇷</span>
+          <span class="game-rank-country-name">한국</span>
+          <span class="game-rank-country-value">64</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇯🇵</span>
+          <span class="game-rank-country-name">일본</span>
+          <span class="game-rank-country-value">83</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇺🇸</span>
+          <span class="game-rank-country-name">미국</span>
+          <span class="game-rank-country-value">79</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇨🇳</span>
+          <span class="game-rank-country-name">중국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇹🇼</span>
+          <span class="game-rank-country-name">대만</span>
+          <span class="game-rank-country-value">53</span>
+          
+        </div></div></div><div class="game-rank-col"><div class="game-rank-col-header"><img src="https://www.google.com/s2/favicons?domain=play.google.com&sz=32" alt="">Android</div><div class="game-rank-rows"><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇰🇷</span>
+          <span class="game-rank-country-name">한국</span>
+          <span class="game-rank-country-value">128</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇯🇵</span>
+          <span class="game-rank-country-name">일본</span>
+          <span class="game-rank-country-value">109</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇺🇸</span>
+          <span class="game-rank-country-name">미국</span>
+          <span class="game-rank-country-value">95</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇨🇳</span>
+          <span class="game-rank-country-name">중국</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div><div class="game-rank-country-row">
+          <span class="game-rank-country-flag">🇹🇼</span>
+          <span class="game-rank-country-name">대만</span>
+          <span class="game-rank-country-value">-</span>
+          
+        </div></div></div></div></div></div></div>
+        </div>
+
+        <!-- 모바일 게임 순위 히스토리 카드 -->
+        <div class="home-card">
+          <div class="home-card-header">
+            <h2 class="home-card-title">순위 히스토리</h2>
+          </div>
+          <div class="home-card-body">
+      <div class="rank-trend-section mobile-trend-section">
+        <div class="trend-tab-row">
+          <div class="tab-group trend-tabs-left">
+            <button class="tab-btn active" data-trend-cat="grossing">매출</button><button class="tab-btn" data-trend-cat="free">인기</button>
+          </div>
+          <div class="tab-group trend-tabs-right">
+            <button class="tab-btn active" data-trend-period="daily">일</button><button class="tab-btn" data-trend-period="weekly">주</button><button class="tab-btn" data-trend-period="monthly">월</button>
+          </div>
+        </div>
+        <div class="trend-legend-row">
+          <div class="trend-legend"><span class="trend-legend-item active" data-legend="kr"><span class="legend-dot" data-region="kr"></span>한국</span><span class="trend-legend-item active" data-legend="jp"><span class="legend-dot" data-region="jp"></span>일본</span><span class="trend-legend-item active" data-legend="us"><span class="legend-dot" data-region="us"></span>미국</span><span class="trend-legend-item active" data-legend="cn"><span class="legend-dot" data-region="cn"></span>중국</span><span class="trend-legend-item active" data-legend="tw"><span class="legend-dot" data-region="tw"></span>대만</span></div>
+          
+      <div class="trend-market-toggle">
+        <button class="market-toggle-btn active" data-market-toggle="ios">iOS</button>
+        <button class="market-toggle-btn" data-market-toggle="aos">Android</button>
+      </div>
+    
+        </div>
+        <div class="trend-charts">
+          <div class="trend-content active" data-cat="grossing" data-period="daily">
+            
+        <div class="chart-market-container">
+          <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">1월12일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월13일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월14일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월15일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월16일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월17일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월18일</text>
+        </svg></div>
+          <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">1월12일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월13일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월14일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월15일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월16일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월17일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월18일</text>
+        </svg></div>
+        </div>
+      
+          </div>
+        
+          <div class="trend-content" data-cat="grossing" data-period="weekly">
+            
+        <div class="chart-market-container">
+          <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월7일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">12월14일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월21일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월28일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월11일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월18일</text>
+        </svg></div>
+          <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월7일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">12월14일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월21일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월28일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월11일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월18일</text>
+        </svg></div>
+        </div>
+      
+          </div>
+        
+          <div class="trend-content" data-cat="grossing" data-period="monthly">
+            
+        <div class="chart-market-container">
+          <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
+        </svg></div>
+          <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.74311926605505" x2="396" y2="65.74311926605505" /><line class="chart-grid" x1="18" y1="125.4862385321101" x2="396" y2="125.4862385321101" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><text class="chart-ylabel" x="14" y="9" text-anchor="end">1</text><text class="chart-ylabel" x="14" y="68.74311926605505" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="128.4862385321101" text-anchor="end">75</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">110</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
+        </svg></div>
+        </div>
+      
+          </div>
+        
+          <div class="trend-content" data-cat="free" data-period="daily">
+            
+        <div class="chart-market-container">
+          <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.71428571428572" x2="396" y2="65.71428571428572" /><line class="chart-grid" x1="18" y1="125.42857142857143" x2="396" y2="125.42857142857143" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="34,37.42857142857143 91.66666666666666,50 149.33333333333331,84.57142857142857 207,72 264.66666666666663,138 322.33333333333337,68.85714285714286 380,21.714285714285715" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,128.57142857142856 91.66666666666666,128.57142857142856 149.33333333333331,150.57142857142856 207,153.71428571428572 264.66666666666663,134.85714285714286 322.33333333333337,150.57142857142856 380,103.42857142857143" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="34,138 91.66666666666666,128.57142857142856 149.33333333333331,144.28571428571428 207,166.28571428571428 264.66666666666663,156.85714285714286 322.33333333333337,160 380,116" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="34,75.14285714285714 91.66666666666666,62.57142857142858 149.33333333333331,62.57142857142858 207,56.285714285714285 264.66666666666663,68.85714285714286 322.33333333333337,56.285714285714285 380,56.285714285714285" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="34" cy="37.42857142857143" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="91.66666666666666" cy="50" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="149.33333333333331" cy="84.57142857142857" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="207" cy="72" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="264.66666666666663" cy="138" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="322.33333333333337" cy="68.85714285714286" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="21.714285714285715" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="128.57142857142856" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="91.66666666666666" cy="128.57142857142856" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="150.57142857142856" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="207" cy="153.71428571428572" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="134.85714285714286" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="322.33333333333337" cy="150.57142857142856" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="103.42857142857143" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="34" cy="138" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="91.66666666666666" cy="128.57142857142856" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="144.28571428571428" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="207" cy="166.28571428571428" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="264.66666666666663" cy="156.85714285714286" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="322.33333333333337" cy="160" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="116" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="75.14285714285714" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="91.66666666666666" cy="62.57142857142858" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="149.33333333333331" cy="62.57142857142858" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="207" cy="56.285714285714285" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="264.66666666666663" cy="68.85714285714286" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="322.33333333333337" cy="56.285714285714285" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="56.285714285714285" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="34" y="31.42857142857143" text-anchor="middle">58</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="91.66666666666666" y="44" text-anchor="middle">62</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="149.33333333333331" y="78.57142857142857" text-anchor="middle">73</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="207" y="66" text-anchor="middle">69</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="264.66666666666663" y="132" text-anchor="middle">90</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="322.33333333333337" y="62.85714285714286" text-anchor="middle">68</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="15.714285714285715" text-anchor="middle">53</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="122.57142857142856" text-anchor="middle">87</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="91.66666666666666" y="122.57142857142856" text-anchor="middle">87</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="144.57142857142856" text-anchor="middle">94</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="207" y="147.71428571428572" text-anchor="middle">95</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="128.85714285714286" text-anchor="middle">89</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="322.33333333333337" y="144.57142857142856" text-anchor="middle">94</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="97.42857142857143" text-anchor="middle">79</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="34" y="132" text-anchor="middle">90</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="91.66666666666666" y="122.57142857142856" text-anchor="middle">87</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="149.33333333333331" y="138.28571428571428" text-anchor="middle">92</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="207" y="160.28571428571428" text-anchor="middle">99</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="264.66666666666663" y="150.85714285714286" text-anchor="middle">96</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="322.33333333333337" y="154" text-anchor="middle">97</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="110" text-anchor="middle">83</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="69.14285714285714" text-anchor="middle">70</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="91.66666666666666" y="56.57142857142858" text-anchor="middle">66</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="149.33333333333331" y="56.57142857142858" text-anchor="middle">66</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="207" y="50.285714285714285" text-anchor="middle">64</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="264.66666666666663" y="62.85714285714286" text-anchor="middle">68</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="322.33333333333337" y="50.285714285714285" text-anchor="middle">64</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="50.285714285714285" text-anchor="middle">64</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">48</text><text class="chart-ylabel" x="14" y="68.71428571428572" text-anchor="end">67</text><text class="chart-ylabel" x="14" y="128.42857142857144" text-anchor="end">86</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">104</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">1월12일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월13일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월14일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월15일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월16일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월17일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월18일</text>
+        </svg></div>
+          <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="34,131.42528735632186 91.66666666666666,123.33333333333333 149.33333333333331,163.79310344827587 207,165.816091954023 264.66666666666663,165.816091954023 322.33333333333337,141.54022988505747 380,22.183908045977013" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="34,64.66666666666666 91.66666666666666,30.275862068965516 149.33333333333331,34.32183908045977 207,58.59770114942529 264.66666666666663,72.75862068965517 322.33333333333337,76.80459770114943 380,50.50574712643679" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="34,129.4022988505747 91.66666666666666,123.33333333333333 149.33333333333331,119.28735632183908 207,119.28735632183908 264.66666666666663,107.14942528735631 322.33333333333337,109.17241379310344 380,88.94252873563218" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="34" cy="131.42528735632186" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="91.66666666666666" cy="123.33333333333333" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="163.79310344827587" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="207" cy="165.816091954023" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="165.816091954023" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="322.33333333333337" cy="141.54022988505747" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="22.183908045977013" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="34" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="91.66666666666666" cy="30.275862068965516" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="34.32183908045977" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="207" cy="58.59770114942529" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="264.66666666666663" cy="72.75862068965517" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="322.33333333333337" cy="76.80459770114943" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="50.50574712643679" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="129.4022988505747" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="91.66666666666666" cy="123.33333333333333" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="149.33333333333331" cy="119.28735632183908" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="207" cy="119.28735632183908" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="264.66666666666663" cy="107.14942528735631" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="322.33333333333337" cy="109.17241379310344" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="88.94252873563218" r="2.5" /><text class="chart-rank-label" data-region="us" fill="#3742FA" x="34" y="125.42528735632186" text-anchor="middle">149</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="91.66666666666666" y="117.33333333333333" text-anchor="middle">145</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="157.79310344827587" text-anchor="middle">165</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="207" y="159.816091954023" text-anchor="middle">166</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="159.816091954023" text-anchor="middle">166</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="322.33333333333337" y="135.54022988505747" text-anchor="middle">154</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="16.183908045977013" text-anchor="middle">95</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="34" y="58.66666666666666" text-anchor="middle">116</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="91.66666666666666" y="24.275862068965516" text-anchor="middle">99</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="149.33333333333331" y="28.321839080459768" text-anchor="middle">101</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="207" y="52.59770114942529" text-anchor="middle">113</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="264.66666666666663" y="66.75862068965517" text-anchor="middle">120</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="322.33333333333337" y="70.80459770114943" text-anchor="middle">122</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="44.50574712643679" text-anchor="middle">109</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="123.40229885057471" text-anchor="middle">148</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="91.66666666666666" y="117.33333333333333" text-anchor="middle">145</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="149.33333333333331" y="113.28735632183908" text-anchor="middle">143</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="207" y="113.28735632183908" text-anchor="middle">143</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="264.66666666666663" y="101.14942528735631" text-anchor="middle">137</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="322.33333333333337" y="103.17241379310344" text-anchor="middle">138</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="82.94252873563218" text-anchor="middle">128</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">87</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">116</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">145</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">174</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">1월12일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">1월13일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">1월14일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">1월15일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월16일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월17일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월18일</text>
+        </svg></div>
+        </div>
+      
+          </div>
+        
+          <div class="trend-content" data-cat="free" data-period="weekly">
+            
+        <div class="chart-market-container">
+          <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="tw" stroke="#A55EEA" points="149.33333333333331,22.296296296296294 207,41.85185185185185 264.66666666666663,54.88888888888889 322.33333333333337,32.074074074074076 380,54.88888888888889" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="149.33333333333331,84.22222222222221 207,97.25925925925925 264.66666666666663,113.55555555555557 322.33333333333337,146.14814814814815 380,139.62962962962965" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="149.33333333333331,116.81481481481482 207,67.92592592592592 264.66666666666663,38.59259259259259 322.33333333333337,103.77777777777779 380,152.66666666666669" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="34,165.7037037037037 149.33333333333331,84.22222222222221 207,107.03703703703704 264.66666666666663,94 322.33333333333337,94 380,90.74074074074073" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="149.33333333333331" cy="22.296296296296294" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="207" cy="41.85185185185185" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="264.66666666666663" cy="54.88888888888889" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="322.33333333333337" cy="32.074074074074076" r="2.5" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="54.88888888888889" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="84.22222222222221" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="207" cy="97.25925925925925" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="113.55555555555557" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="322.33333333333337" cy="146.14814814814815" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="139.62962962962965" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="116.81481481481482" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="207" cy="67.92592592592592" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="264.66666666666663" cy="38.59259259259259" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="322.33333333333337" cy="103.77777777777779" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="152.66666666666669" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="165.7037037037037" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="149.33333333333331" cy="84.22222222222221" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="207" cy="107.03703703703704" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="264.66666666666663" cy="94" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="322.33333333333337" cy="94" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="90.74074074074073" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="149.33333333333331" y="16.296296296296294" text-anchor="middle">43</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="207" y="35.85185185185185" text-anchor="middle">49</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="264.66666666666663" y="48.88888888888889" text-anchor="middle">53</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="322.33333333333337" y="26.074074074074076" text-anchor="middle">46</text><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="48.88888888888889" text-anchor="middle">53</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="78.22222222222221" text-anchor="middle">62</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="207" y="91.25925925925925" text-anchor="middle">66</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="107.55555555555557" text-anchor="middle">71</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="322.33333333333337" y="140.14814814814815" text-anchor="middle">81</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="133.62962962962965" text-anchor="middle">79</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="149.33333333333331" y="110.81481481481482" text-anchor="middle">72</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="207" y="61.925925925925924" text-anchor="middle">57</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="264.66666666666663" y="32.59259259259259" text-anchor="middle">48</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="322.33333333333337" y="97.77777777777779" text-anchor="middle">68</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="146.66666666666669" text-anchor="middle">83</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="159.7037037037037" text-anchor="middle">87</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="149.33333333333331" y="78.22222222222221" text-anchor="middle">62</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="207" y="101.03703703703704" text-anchor="middle">69</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="264.66666666666663" y="88" text-anchor="middle">65</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="322.33333333333337" y="88" text-anchor="middle">65</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="84.74074074074073" text-anchor="middle">64</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">38</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">56</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">74</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">92</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월7일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">12월14일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월21일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월28일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월11일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월18일</text>
+        </svg></div>
+          <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="65.4" x2="396" y2="65.4" /><line class="chart-grid" x1="18" y1="124.80000000000001" x2="396" y2="124.80000000000001" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="us" stroke="#3742FA" points="149.33333333333331,153.4 207,43.4 264.66666666666663,21.4 322.33333333333337,68.7 380,66.5" /><polyline class="chart-line" data-region="jp" stroke="#2ED573" points="149.33333333333331,96.19999999999999 207,83 264.66666666666663,45.6 322.33333333333337,67.6 380,70.9" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="91.66666666666666,153.4 149.33333333333331,166.6 207,145.7 264.66666666666663,133.6 322.33333333333337,124.80000000000001 380,102.80000000000001" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="149.33333333333331" cy="153.4" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="207" cy="43.4" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="264.66666666666663" cy="21.4" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="322.33333333333337" cy="68.7" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="66.5" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="149.33333333333331" cy="96.19999999999999" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="207" cy="83" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="264.66666666666663" cy="45.6" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="322.33333333333337" cy="67.6" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="70.9" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="91.66666666666666" cy="153.4" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="149.33333333333331" cy="166.6" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="207" cy="145.7" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="264.66666666666663" cy="133.6" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="322.33333333333337" cy="124.80000000000001" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="102.80000000000001" r="2.5" /><text class="chart-rank-label" data-region="us" fill="#3742FA" x="149.33333333333331" y="147.4" text-anchor="middle">174</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="207" y="37.4" text-anchor="middle">74</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="264.66666666666663" y="15.399999999999999" text-anchor="middle">54</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="322.33333333333337" y="62.7" text-anchor="middle">97</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="60.5" text-anchor="middle">95</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="149.33333333333331" y="90.19999999999999" text-anchor="middle">122</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="207" y="77" text-anchor="middle">110</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="264.66666666666663" y="39.6" text-anchor="middle">76</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="322.33333333333337" y="61.599999999999994" text-anchor="middle">96</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="64.9" text-anchor="middle">99</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="91.66666666666666" y="147.4" text-anchor="middle">174</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="149.33333333333331" y="160.6" text-anchor="middle">186</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="207" y="139.7" text-anchor="middle">167</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="264.66666666666663" y="127.6" text-anchor="middle">156</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="322.33333333333337" y="118.80000000000001" text-anchor="middle">148</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="96.80000000000001" text-anchor="middle">128</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">40</text><text class="chart-ylabel" x="14" y="68.4" text-anchor="end">94</text><text class="chart-ylabel" x="14" y="127.80000000000001" text-anchor="end">148</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">200</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월7일</text><text class="chart-xlabel" x="91.66666666666666" y="198" text-anchor="middle">12월14일</text><text class="chart-xlabel" x="149.33333333333331" y="198" text-anchor="middle">12월21일</text><text class="chart-xlabel" x="207" y="198" text-anchor="middle">12월28일</text><text class="chart-xlabel" x="264.66666666666663" y="198" text-anchor="middle">1월4일</text><text class="chart-xlabel" x="322.33333333333337" y="198" text-anchor="middle">1월11일</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월18일</text>
+        </svg></div>
+        </div>
+      
+          </div>
+        
+          <div class="trend-content" data-cat="free" data-period="monthly">
+            
+        <div class="chart-market-container">
+          <div class="chart-market-svg active" data-market="ios"><svg class="trend-chart-svg" data-market="ios" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="66.09756097560975" x2="396" y2="66.09756097560975" /><line class="chart-grid" x1="18" y1="126.19512195121952" x2="396" y2="126.19512195121952" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><polyline class="chart-line" data-region="kr" stroke="#FF4757" points="34,91.85365853658536 380,100.4390243902439" /><circle class="chart-dot" data-region="tw" fill="#A55EEA" cx="380" cy="23.170731707317074" r="2.5" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="164.82926829268294" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="53.21951219512195" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="34" cy="91.85365853658536" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="100.4390243902439" r="2.5" /><text class="chart-rank-label" data-region="tw" fill="#A55EEA" x="380" y="17.170731707317074" text-anchor="middle">46</text><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="158.82926829268294" text-anchor="middle">79</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="47.21951219512195" text-anchor="middle">53</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="34" y="85.85365853658536" text-anchor="middle">62</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="94.4390243902439" text-anchor="middle">64</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">42</text><text class="chart-ylabel" x="14" y="69.09756097560975" text-anchor="end">56</text><text class="chart-ylabel" x="14" y="129.1951219512195" text-anchor="end">70</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">83</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
+        </svg></div>
+          <div class="chart-market-svg" data-market="aos"><svg class="trend-chart-svg" data-market="aos" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+          <line class="chart-grid" x1="18" y1="6" x2="396" y2="6" /><line class="chart-grid" x1="18" y1="64.66666666666666" x2="396" y2="64.66666666666666" /><line class="chart-grid" x1="18" y1="123.33333333333333" x2="396" y2="123.33333333333333" /><line class="chart-grid" x1="18" y1="182" x2="396" y2="182" /><circle class="chart-dot" data-region="us" fill="#3742FA" cx="380" cy="21.644444444444446" r="2.5" /><circle class="chart-dot" data-region="jp" fill="#2ED573" cx="380" cy="64.66666666666666" r="2.5" /><circle class="chart-dot" data-region="kr" fill="#FF4757" cx="380" cy="166.35555555555555" r="2.5" /><text class="chart-rank-label" data-region="us" fill="#3742FA" x="380" y="15.644444444444446" text-anchor="middle">54</text><text class="chart-rank-label" data-region="jp" fill="#2ED573" x="380" y="58.66666666666666" text-anchor="middle">76</text><text class="chart-rank-label" data-region="kr" fill="#FF4757" x="380" y="160.35555555555555" text-anchor="middle">128</text><text class="chart-ylabel" x="14" y="9" text-anchor="end">46</text><text class="chart-ylabel" x="14" y="67.66666666666666" text-anchor="end">76</text><text class="chart-ylabel" x="14" y="126.33333333333333" text-anchor="end">106</text><text class="chart-ylabel" x="14" y="185" text-anchor="end">136</text><text class="chart-xlabel" x="34" y="198" text-anchor="middle">12월</text><text class="chart-xlabel" x="380" y="198" text-anchor="middle">1월</text>
+        </svg></div>
+        </div>
+      
+          </div>
+        </div>
+      </div>
+      <script>
+        (function() {
+          const section = document.querySelector('.mobile-trend-section');
+          if (!section) return;
+
+          let activeCat = 'grossing', activePeriod = 'daily';
+          const activeRegions = new Set(['kr', 'jp', 'us', 'cn', 'tw']);
+          let activeMarket = 'ios';
+
+          function updateChart() {
+            section.querySelectorAll('.trend-content').forEach(c => c.classList.remove('active'));
+            const target = section.querySelector('.trend-content[data-cat="' + activeCat + '"][data-period="' + activePeriod + '"]');
+            if (target) target.classList.add('active');
+          }
+
+          function updateVisibility() {
+            // 마켓별 SVG 컨테이너 토글
+            section.querySelectorAll('.chart-market-svg').forEach(el => {
+              const isActive = el.dataset.market === activeMarket;
+              el.classList.toggle('active', isActive);
+            });
+            // 국가별 요소 토글
+            section.querySelectorAll('[data-region]').forEach(el => {
+              const region = el.dataset.region;
+              const visible = activeRegions.has(region);
+              el.style.opacity = visible ? '1' : '0';
+              el.style.pointerEvents = visible ? 'auto' : 'none';
+            });
+          }
+
+          // 카테고리 탭
+          section.querySelectorAll('[data-trend-cat]').forEach(btn => {
+            btn.addEventListener('click', () => {
+              section.querySelectorAll('[data-trend-cat]').forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+              activeCat = btn.dataset.trendCat;
+              updateChart();
+            });
+          });
+
+          // 기간 탭
+          section.querySelectorAll('[data-trend-period]').forEach(btn => {
+            btn.addEventListener('click', () => {
+              section.querySelectorAll('[data-trend-period]').forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+              activePeriod = btn.dataset.trendPeriod;
+              updateChart();
+            });
+          });
+
+          // 범례 클릭 (국가 토글)
+          section.querySelectorAll('[data-legend]').forEach(item => {
+            item.addEventListener('click', () => {
+              const region = item.dataset.legend;
+              if (activeRegions.has(region)) {
+                activeRegions.delete(region);
+                item.classList.remove('active');
+              } else {
+                activeRegions.add(region);
+                item.classList.add('active');
+              }
+              updateVisibility();
+            });
+          });
+
+          // 마켓 토글 (iOS/Android 전환)
+          section.querySelectorAll('[data-market-toggle]').forEach(btn => {
+            btn.addEventListener('click', () => {
+              const market = btn.dataset.marketToggle;
+              if (activeMarket !== market) {
+                activeMarket = market;
+                section.querySelectorAll('[data-market-toggle]').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                updateVisibility();
+              }
+            });
+          });
+
+          // 초기 visibility 설정
+          updateVisibility();
+        })();
+      </script>
+    </div>
+        </div>
+        
+
+        <!-- 중간 광고 -->
+        <div class="grid-full"><div class="ad-card ad-card-mobile-mid ad-lazy">
+  <ins class="adsbygoogle"
+       style="display:inline-block;max-width:300px;width:100%;height:250px"
+       data-ad-client="ca-pub-9477874183990825"
+       data-ad-slot="4840966314"></ins>
+</div></div>
+
+        <!-- 뉴스 (풀 너비) -->
+        <div class="home-card grid-full">
+          <div class="home-card-header">
+            <h2 class="home-card-title">뉴스</h2>
+          </div>
+          <div class="home-card-body"><div class="gm-container gm-container-wide">
+        <div class="gm-tab-row">
+      <div class="tab-group">
+        <button class="tab-btn active" data-gm-period="all">전체</button>
+        <button class="tab-btn" data-gm-period="weekly">주간</button>
+        <button class="tab-btn" data-gm-period="monthly">월간</button>
+      </div>
+    </div>
+        <div class="game-empty">리포트 인용이 없습니다</div>
+      </div></div>
+        </div>
+      </div>
+    </section>
+  
+    <script>
+    // 최근 본 게임 저장
+    (function() {
+      const RECENT_KEY = 'gamerscrawl_recent_searches';
+      const MAX_RECENT = 8;
+      const gameInfo = { name: '데이터 필요없는 게임 - 와이파이 필요없는 게임', slug: '데이터-필요없는-게임-와이파이-필요없는-게임', icon: 'https://play-lh.googleusercontent.com/UoBeMWwIeHSxGAx1EhmvWrG1lkzlG78UByGwEkEhRlp40udqC0hHJeRTl266g9aG-A' };
+      try {
+        let recent = JSON.parse(localStorage.getItem(RECENT_KEY)) || [];
+        recent = recent.filter(g => g.slug !== gameInfo.slug);
+        recent.unshift(gameInfo);
+        recent = recent.slice(0, MAX_RECENT);
+        localStorage.setItem(RECENT_KEY, JSON.stringify(recent));
+      } catch (e) {}
+    })();
+
+    // 실시간 모바일 순위 탭 전환
+    (function() {
+      const section = document.querySelector('.realtime-rank-section');
+      if (!section) return;
+
+      let activeCat = 'grossing';
+      let activeView = 'summary';
+      let activeMarket = 'ios';
+      const activeRegions = new Set(['kr', 'jp', 'us', 'cn', 'tw']);
+
+      const legendRow = section.querySelector('.realtime-legend-row');
+
+	      function updateContent() {
+	        section.querySelectorAll('.realtime-content').forEach(c => {
+	          const isCat = c.dataset.realtimeCat === activeCat;
+	          const isView = c.dataset.realtimeView === activeView;
+	          c.classList.toggle('active', isCat && isView);
+	        });
+	        // 실시간 뷰일 때만 범례 표시
+	        if (legendRow) {
+	          legendRow.classList.toggle('is-hidden', activeView !== 'realtime');
+	        }
+	      }
+
+      function updateMarket() {
+        section.querySelectorAll('.chart-market-svg').forEach(el => {
+          el.classList.toggle('active', el.dataset.market === activeMarket);
+        });
+      }
+
+      function updateRegions() {
+        section.querySelectorAll('[data-region]').forEach(el => {
+          const visible = activeRegions.has(el.dataset.region);
+          el.style.opacity = visible ? '1' : '0';
+          el.style.pointerEvents = visible ? 'auto' : 'none';
+        });
+      }
+
+      // 카테고리 탭 (매출/인기)
+      section.querySelectorAll('[data-realtime-cat]').forEach(tab => {
+        if (tab.tagName === 'BUTTON') {
+          tab.addEventListener('click', () => {
+            activeCat = tab.dataset.realtimeCat;
+            section.querySelectorAll('[data-realtime-cat]').forEach(t => {
+              if (t.tagName === 'BUTTON') t.classList.toggle('active', t.dataset.realtimeCat === activeCat);
+            });
+            updateContent();
+          });
+        }
+      });
+
+      // 뷰 탭 (요약/실시간)
+      section.querySelectorAll('[data-realtime-view]').forEach(tab => {
+        if (tab.tagName === 'BUTTON' && !tab.disabled) {
+          tab.addEventListener('click', () => {
+            activeView = tab.dataset.realtimeView;
+            section.querySelectorAll('[data-realtime-view]').forEach(t => {
+              if (t.tagName === 'BUTTON') t.classList.toggle('active', t.dataset.realtimeView === activeView);
+            });
+            updateContent();
+          });
+        }
+      });
+
+      // 마켓 토글 (iOS/Android)
+      section.querySelectorAll('[data-market-toggle]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          activeMarket = btn.dataset.marketToggle;
+          section.querySelectorAll('[data-market-toggle]').forEach(b => {
+            b.classList.toggle('active', b.dataset.marketToggle === activeMarket);
+          });
+          updateMarket();
+        });
+      });
+
+      // 범례 클릭 (국가 토글)
+      section.querySelectorAll('.trend-legend-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const region = item.dataset.legend;
+          if (activeRegions.has(region)) {
+            if (activeRegions.size > 1) {
+              activeRegions.delete(region);
+              item.classList.remove('active');
+            }
+          } else {
+            activeRegions.add(region);
+            item.classList.add('active');
+          }
+          updateRegions();
+        });
+      });
+
+      updateContent();
+      updateMarket();
+      updateRegions();
+    })();
+
+    // 트렌드 리포트 전체/주간/월간 탭 + 페이지네이션
+    (function() {
+      const container = document.querySelector('.gm-container');
+      if (!container) return;
+
+      const tabs = container.querySelectorAll('[data-gm-period]');
+      const contents = container.querySelectorAll('[data-gm-content]');
+      const prevBtn = container.querySelector('.gm-prev');
+      const nextBtn = container.querySelector('.gm-next');
+      const pageIndex = container.querySelector('.gm-page-index');
+
+      // PC: 6개, 모바일: 3개
+      const getPageSize = () => window.innerWidth <= 768 ? 3 : 6;
+      let currentPage = { all: 0, weekly: 0, monthly: 0 };
+      let currentPeriod = 'all';
+
+      function updatePagination() {
+        const activeContent = container.querySelector('[data-gm-content="' + currentPeriod + '"]');
+        if (!activeContent) return;
+
+        const items = activeContent.querySelectorAll('.gm-item');
+        const pageSize = getPageSize();
+        const totalPages = Math.ceil(items.length / pageSize) || 1;
+        const page = currentPage[currentPeriod];
+
+        // 아이템 표시/숨김
+        items.forEach((item, i) => {
+          const start = page * pageSize;
+          const end = start + pageSize;
+          item.style.display = (i >= start && i < end) ? '' : 'none';
+        });
+
+        // 인덱스 업데이트
+        pageIndex.textContent = (page + 1) + '/' + totalPages;
+
+        // 버튼 활성화
+        prevBtn.disabled = page <= 0;
+        nextBtn.disabled = page >= totalPages - 1;
+      }
+
+      // 탭 전환
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          currentPeriod = tab.dataset.gmPeriod;
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          contents.forEach(c => c.classList.toggle('active', c.dataset.gmContent === currentPeriod));
+          updatePagination();
+        });
+      });
+
+      // 페이지 이동
+      prevBtn.addEventListener('click', () => {
+        if (currentPage[currentPeriod] > 0) {
+          currentPage[currentPeriod]--;
+          updatePagination();
+        }
+      });
+      nextBtn.addEventListener('click', () => {
+        const activeContent = container.querySelector('[data-gm-content="' + currentPeriod + '"]');
+        const items = activeContent.querySelectorAll('.gm-item');
+        const totalPages = Math.ceil(items.length / getPageSize());
+        if (currentPage[currentPeriod] < totalPages - 1) {
+          currentPage[currentPeriod]++;
+          updatePagination();
+        }
+      });
+
+      // 화면 리사이즈 시 재계산
+      window.addEventListener('resize', () => {
+        Object.keys(currentPage).forEach(k => currentPage[k] = 0);
+        updatePagination();
+      });
+
+      // 초기화
+      updatePagination();
+    })();
+  </script>
+  </main>
+  
+	  <!-- Footer -->
+	  <footer class="site-footer">
+	    <span>© 2026 게이머스크롤</span>
+	    <span class="footer-divider">|</span>
+	    <a href="/privacy/" class="footer-privacy-link" data-modal-open="privacy-modal">개인정보처리방침</a>
+	  </footer>
+
+	  <!-- Privacy Modal -->
+	  <div id="privacy-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+	    <div class="modal-content">
+	      <button class="modal-close" type="button" data-modal-close="privacy-modal" aria-label="닫기">&times;</button>
+	      <h2>개인정보처리방침</h2>
+	      <p>게이머스크롤(이하 "본 사이트")은 「개인정보 보호법」 및 관련 법령에 따라 이용자의 개인정보를 보호하고, 이와 관련된 고충을 신속하게 처리하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다.</p>
+
+      <h3>1. 개인정보의 수집 항목 및 방법</h3>
+      <p>본 사이트는 별도의 회원가입 절차 없이 모든 서비스를 이용할 수 있으며, 이용자로부터 이름, 이메일, 연락처 등의 개인정보를 직접 수집하지 않습니다.</p>
+
+      <h3>2. 자동으로 수집되는 정보</h3>
+      <p>서비스 이용 과정에서 아래와 같은 정보가 자동으로 생성되어 수집될 수 있습니다:</p>
+      <ul class="privacy-modal-list">
+        <li>접속 기기 정보 (기기 유형, 운영체제, 브라우저 종류)</li>
+        <li>접속 로그 (접속 일시, 방문 페이지, 체류 시간)</li>
+        <li>IP 주소 (익명화 처리됨)</li>
+      </ul>
+      <p>이 정보는 Google Analytics를 통해 수집되며, 개인을 식별할 수 없는 통계 형태로만 활용됩니다.</p>
+
+      <h3>3. 개인정보의 보유 및 이용 기간</h3>
+      <p>자동 수집된 정보는 수집일로부터 최대 26개월간 보관되며, 이후 자동으로 파기됩니다.</p>
+
+      <h3>4. 쿠키(Cookie)의 사용</h3>
+      <p>본 사이트는 이용자의 편의를 위해 쿠키를 사용합니다. 쿠키는 웹사이트 운영에 필요한 기술적 정보를 저장하며, 이용자는 브라우저 설정을 통해 쿠키 저장을 거부할 수 있습니다.</p>
+
+      <h3>5. 개인정보의 제3자 제공</h3>
+      <p>본 사이트는 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만, Google Analytics 서비스 이용을 위해 익명화된 통계 데이터가 Google에 전송될 수 있습니다.</p>
+
+      <h3>6. 정책 변경</h3>
+      <p>본 개인정보처리방침은 법령 또는 서비스 변경에 따라 수정될 수 있으며, 변경 시 본 페이지를 통해 공지합니다.</p>
+
+      <p class="privacy-modal-effective-date">시행일자: 2025년 12월 4일</p>
+    </div>
+  </div>
+
+  
+<script>
+(function() {
+  function openModal(modal) { if (modal) { modal.classList.add('is-open'); modal.setAttribute('aria-hidden', 'false'); } }
+  function closeModal(modal) { if (modal) { modal.classList.remove('is-open'); modal.setAttribute('aria-hidden', 'true'); } }
+  document.querySelectorAll('[data-modal-open]').forEach(t => t.addEventListener('click', (e) => { e.preventDefault(); openModal(document.getElementById(t.getAttribute('data-modal-open'))); }));
+  document.querySelectorAll('[data-modal-close]').forEach(b => b.addEventListener('click', (e) => { e.preventDefault(); closeModal(document.getElementById(b.getAttribute('data-modal-close')) || b.closest('.modal-overlay')); }));
+  document.querySelectorAll('.modal-overlay').forEach(m => m.addEventListener('click', (e) => { if (e.target === m) closeModal(m); }));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { const m = document.querySelector('.modal-overlay.is-open'); if (m) closeModal(m); } });
+})();
+</script>
+  
+<script>
+(function() {
+  function initLazyAds() {
+    var lazyAds = document.querySelectorAll('.ad-lazy .adsbygoogle:not([data-ad-loaded])');
+    if (!lazyAds.length) return;
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var ad = entry.target;
+            if (ad.dataset.adLoaded) return;
+            ad.dataset.adLoaded = '1';
+            try {
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {}
+            observer.unobserve(ad);
+          }
+        });
+      }, {
+        rootMargin: '500px 0px' // 모바일: 뷰포트 500px 전에 미리 로드
+      });
+
+      lazyAds.forEach(function(ad) {
+        observer.observe(ad);
+      });
+    } else {
+      // IntersectionObserver 미지원 브라우저: 즉시 로드
+      lazyAds.forEach(function(ad) {
+        if (ad.dataset.adLoaded) return;
+        ad.dataset.adLoaded = '1';
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {}
+      });
+    }
+  }
+
+  // DOM 준비 후 실행
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLazyAds);
+  } else {
+    initLazyAds();
+  }
+})();
+</script>
+  
+<script>
+(function() {
+  function applyFallback(img) {
+    if (!img || img.tagName !== 'IMG' || img.dataset.gcFallback === '1') return;
+    img.dataset.gcFallback = '1';
+    const action = img.dataset.imgFallback || '';
+    if (action === 'hide') img.style.display = 'none';
+    else if (action === 'parent-hide' && img.parentElement) img.parentElement.style.display = 'none';
+  }
+  document.addEventListener('error', (e) => { if (e.target && e.target.tagName === 'IMG') applyFallback(e.target); }, true);
+})();
+</script>
+  
+<script>
+(function() {
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => document.documentElement.classList.add('fonts-loaded'));
+  else setTimeout(() => document.documentElement.classList.add('fonts-loaded'), 100);
+  function parseTwemoji() {
+    if (window.__gcTwemojiParsed || typeof twemoji === 'undefined') return;
+    twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+    window.__gcTwemojiParsed = '1';
+  }
+  parseTwemoji();
+  window.addEventListener('load', parseTwemoji);
+})();
+</script>
+  
+<script>
+(function() {
+  const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
+  const MAX_RECENT = 8;
+  const SEARCH_INDEX_URL = '/games/search-index.json';
+  const SEARCH_INDEX_CACHE_KEY = 'gamerscrawl_search_index_v1';
+  let gamesData = [];
+  let gamesDataLoaded = false;
+  let gamesDataPromise = null;
+
+  function getRecentSearches() {
+    try { return JSON.parse(localStorage.getItem(RECENT_STORAGE_KEY)) || []; }
+    catch { return []; }
+  }
+
+  function saveRecentSearch(game) {
+    const recent = getRecentSearches().filter(g => g.slug !== game.slug);
+    recent.unshift(game);
+    localStorage.setItem(RECENT_STORAGE_KEY, JSON.stringify(recent.slice(0, MAX_RECENT)));
+  }
+
+  function removeRecentSearch(slug) {
+    const recent = getRecentSearches().filter(g => g.slug !== slug);
+    localStorage.setItem(RECENT_STORAGE_KEY, JSON.stringify(recent));
+  }
+
+  function clearAllRecent() {
+    localStorage.removeItem(RECENT_STORAGE_KEY);
+  }
+
+  async function loadGamesDataOnce() {
+    if (gamesDataLoaded) return;
+    if (gamesDataPromise) return gamesDataPromise;
+    gamesDataPromise = (async () => {
+      try {
+        const cached = sessionStorage.getItem(SEARCH_INDEX_CACHE_KEY);
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          gamesData = Array.isArray(parsed) ? parsed : (parsed.games || []);
+          gamesDataLoaded = true;
+          return;
+        }
+      } catch {}
+      try {
+        const response = await fetch(SEARCH_INDEX_URL);
+        if (!response.ok) return;
+        const data = await response.json();
+        gamesData = Array.isArray(data) ? data : (data.games || []);
+        try { sessionStorage.setItem(SEARCH_INDEX_CACHE_KEY, JSON.stringify(gamesData)); } catch {}
+      } catch (e) {
+        gamesData = [];
+      } finally {
+        gamesDataLoaded = true;
+      }
+    })();
+    return gamesDataPromise;
+  }
+
+  const searchInput = document.querySelector('.search-input');
+  const searchDropdown = document.querySelector('.search-dropdown');
+  if (!searchInput || !searchDropdown) return;
+
+  function renderRecentSearches() {
+    const recent = getRecentSearches();
+    if (recent.length === 0) {
+      searchDropdown.innerHTML = '<div class="search-no-results">최근 본 게임이 없습니다</div>';
+    } else {
+      const header = '<div class="search-recent-header"><span class="search-recent-title">최근 본 게임</span><button class="search-clear-all" type="button">전체 삭제</button></div>';
+      const items = recent.map(game => {
+        return '<div class="search-result-item" data-slug="' + game.slug + '" data-href="/games/' + game.slug + '/"><a href="/games/' + game.slug + '/" class="search-result-info"><div class="search-result-title">' + game.name + '</div></a><button class="search-result-delete" type="button" data-slug="' + game.slug + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>';
+      }).join('');
+      searchDropdown.innerHTML = header + items;
+      const clearAllBtn = searchDropdown.querySelector('.search-clear-all');
+      if (clearAllBtn) clearAllBtn.addEventListener('click', (e) => { e.stopPropagation(); clearAllRecent(); renderRecentSearches(); });
+      searchDropdown.querySelectorAll('.search-result-delete').forEach(btn => {
+        btn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); removeRecentSearch(btn.dataset.slug); renderRecentSearches(); });
+      });
+      // 최근 본 게임 클릭 시 페이지 이동
+      searchDropdown.querySelectorAll('.search-result-item[data-href]').forEach(item => {
+        item.addEventListener('click', (e) => {
+          if (e.target.closest('.search-result-delete')) return;
+          e.preventDefault();
+          const href = item.dataset.href;
+          searchDropdown.classList.remove('active');
+          searchInput.blur();
+          window.location.href = href;
+        });
+      });
+    }
+    searchDropdown.classList.add('active');
+  }
+
+  let currentResults = [];
+
+  function performSearch(query) {
+    if (!query || query.length < 1) { currentResults = []; renderRecentSearches(); return; }
+    if (!gamesDataLoaded) {
+      searchDropdown.innerHTML = '<div class="search-no-results">검색 데이터를 불러오는 중...</div>';
+      searchDropdown.classList.add('active');
+      loadGamesDataOnce().then(() => performSearch(query));
+      return;
+    }
+    const lowerQuery = query.toLowerCase();
+    currentResults = gamesData.filter(game => {
+      const name = (game.name || game.title || '').toLowerCase();
+      const developer = (game.developer || game.publisher || '').toLowerCase();
+      const aliases = Array.isArray(game.aliases) ? game.aliases : [];
+      return name.includes(lowerQuery) || developer.includes(lowerQuery) || aliases.some(a => (a || '').toLowerCase().includes(lowerQuery));
+    }).slice(0, 10);
+
+    if (currentResults.length === 0) {
+      searchDropdown.innerHTML = '<div class="search-no-results">검색 결과가 없습니다</div>';
+    } else {
+      searchDropdown.innerHTML = currentResults.map(game => {
+        const name = game.name || game.title || '';
+        const slug = game.slug || game.id || '';
+        return '<a href="/games/' + slug + '/" class="search-result-item" data-game=\'' + JSON.stringify({slug, name}).replace(/'/g, "\\'") + '\'><div class="search-result-info"><div class="search-result-title">' + name + '</div></div></a>';
+      }).join('');
+      // 검색 결과 클릭 시 페이지 이동
+      searchDropdown.querySelectorAll('.search-result-item[data-game]').forEach(item => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault();
+          try { saveRecentSearch(JSON.parse(item.dataset.game)); } catch {}
+          const href = item.getAttribute('href');
+          searchDropdown.classList.remove('active');
+          searchInput.blur();
+          window.location.href = href;
+        });
+      });
+    }
+    searchDropdown.classList.add('active');
+  }
+
+  let debounceTimer;
+  const debouncedSearch = (func, delay) => (...args) => { clearTimeout(debounceTimer); debounceTimer = setTimeout(() => func(...args), delay); };
+  const search = debouncedSearch(performSearch, 200);
+
+  searchInput.addEventListener('input', (e) => search(e.target.value.trim()));
+  searchInput.addEventListener('focus', () => { loadGamesDataOnce(); if (!searchInput.value.trim()) renderRecentSearches(); else performSearch(searchInput.value.trim()); });
+  document.addEventListener('click', (e) => { if (!e.target.closest('.search-container') && !e.target.closest('.nav-search-btn')) searchDropdown.classList.remove('active'); });
+  searchDropdown.addEventListener('mousedown', (e) => e.preventDefault());
+
+  // nav 검색 버튼 클릭 시 검색 드롭다운 열기
+  const navSearchBtn = document.querySelector('.nav-search-btn');
+  if (navSearchBtn) {
+    navSearchBtn.addEventListener('click', () => {
+      searchInput.focus();
+      loadGamesDataOnce();
+      renderRecentSearches();
+    });
+  }
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (!query) return;
+    var searchUrl = '/games/?q=' + encodeURIComponent(query);
+    window.location.href = searchUrl;
+  }
+
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { searchInput.value = ''; searchDropdown.classList.remove('active'); searchInput.blur(); }
+    else if (e.key === 'Enter') { doSearch(); }
+  });
+
+  const searchBtn = document.querySelector('.search-btn');
+  if (searchBtn) searchBtn.addEventListener('click', doSearch);
+})();
+</script>
+  
+<script>
+(function() {
+  const navSections = ['trend', 'games', 'rankings', 'steam', 'youtube', 'upcoming', 'metacritic'];
+
+  const SWIPE_THRESHOLD = 0.10; // 10% 넘으면 페이지 이동
+  const MAX_DRAG_PERCENT = 0.15; // 최대 15%까지 화면 이동
+  const TRANSITION_MS = 120;
+  const SLIDE_OUT_MS = 80; // 슬라이드 아웃 애니메이션 시간
+  const DIRECTION_LOCK_PX = 10;
+  const DIRECTION_LOCK_RATIO = 1.2;
+  const VELOCITY_THRESHOLD = 0.5; // 속도 임계값 (px/ms) - 빠른 플릭 감지
+
+  let originalNavIdx = null;
+  let previewNavIdx = null;
+
+  function setNavActiveIndex(idx) {
+    if (previewNavIdx === idx) return;
+    previewNavIdx = idx;
+
+    var navInner = document.querySelector('.nav-inner');
+    if (!navInner) return;
+    var navItems = navInner.querySelectorAll('.nav-item');
+    for (var i = 0; i < navItems.length; i++) navItems[i].classList.remove('active');
+    if (idx >= 0 && navItems[idx]) navItems[idx].classList.add('active');
+  }
+
+  let touchStartX = null;
+  let touchStartY = null;
+  let touchStartTime = null; // 속도 계산용
+  let swipeAxis = null;
+  let isSwiping = false;
+  let swipeMode = null;
+  let hasPrevPage = false;
+  let hasNextPage = false;
+  let scrollableEl = null;
+  let mainEl = null;
+
+  function getCurrentNavIndex() {
+    const path = window.location.pathname;
+    for (let i = 0; i < navSections.length; i++) {
+      if (path.includes(navSections[i])) return i;
+    }
+    return -1;
+  }
+
+  function getPrevIndex(idx) {
+    if (idx === -1) return navSections.length - 1; // 홈 → 마지막 섹션 (순환)
+    if (idx === 0) return -1;
+    return idx - 1;
+  }
+
+  function getNextIndex(idx) {
+    if (idx === -1) return 0;
+    if (idx >= navSections.length - 1) return -1; // 마지막 → 홈 (순환)
+    return idx + 1;
+  }
+
+  function getPageByIndex(idx) {
+    if (idx === null || idx === undefined) return null;
+    if (idx < 0) return 'home';
+    return navSections[idx] || null;
+  }
+
+  // 스크롤 가능한 요소(가로 스크롤) 찾기
+  function findScrollableElement(el) {
+    while (el && el !== document.body) {
+      if (el.classList && el.classList.contains('chart-scroll') && el.scrollWidth > el.clientWidth) {
+        return el;
+      }
+      el = el.parentElement;
+    }
+    return null;
+  }
+
+  // 가로 스크롤 요소면 끝/처음에서만 페이지 스와이프 허용
+  function isScrollableAtEdge(el, direction) {
+    if (!el) return true;
+    const isAtStart = el.scrollLeft <= 1;
+    const isAtEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 1;
+    return direction === 'next' ? isAtEnd : isAtStart;
+  }
+
+  function resetSwipe() {
+    if (originalNavIdx !== null && originalNavIdx !== undefined) {
+      setNavActiveIndex(originalNavIdx);
+      originalNavIdx = null;
+      previewNavIdx = null;
+    }
+    if (mainEl) {
+      mainEl.style.transition = 'transform ' + TRANSITION_MS + 'ms ease-out';
+      mainEl.style.transform = '';
+      setTimeout(function() {
+        if (mainEl) mainEl.style.transition = '';
+      }, TRANSITION_MS);
+    }
+    touchStartX = null;
+    touchStartY = null;
+    touchStartTime = null;
+    swipeAxis = null;
+    isSwiping = false;
+    swipeMode = null;
+    scrollableEl = null;
+    isOnAd = false;
+  }
+
+  // 슬라이드 아웃 후 페이지 이동
+  function slideOutAndNavigate(url, direction) {
+    if (!mainEl) {
+      window.location.href = url;
+      return;
+    }
+    const screenWidth = window.innerWidth;
+    const targetX = direction === 'next' ? -screenWidth : screenWidth;
+    mainEl.style.transition = 'transform ' + SLIDE_OUT_MS + 'ms ease-in';
+    mainEl.style.transform = 'translate3d(' + targetX + 'px, 0, 0)';
+    setTimeout(function() {
+      window.location.href = url;
+    }, SLIDE_OUT_MS);
+  }
+
+  // 터치 시작
+  document.addEventListener('touchstart', function(e) {
+    if (!e.touches || e.touches.length > 1) return;
+
+    const t = e.target;
+    // nav 영역, 검색 드롭다운, 모달, 입력 필드, 광고 제외
+    if (t && t.closest && t.closest('.nav, .nav-inner, .search-dropdown, .modal-overlay, input, textarea, .ad-card, .adsbygoogle')) return;
+
+    mainEl = document.querySelector('main.site-container');
+    if (!mainEl) return;
+
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    touchStartTime = Date.now();
+    swipeAxis = null;
+    isSwiping = false;
+    swipeMode = null;
+
+    originalNavIdx = getCurrentNavIndex();
+    previewNavIdx = originalNavIdx;
+
+    scrollableEl = findScrollableElement(e.target);
+
+    const idx = getCurrentNavIndex();
+    hasPrevPage = getPrevIndex(idx) !== null;
+    hasNextPage = getNextIndex(idx) !== null;
+  }, { passive: true });
+
+  // 터치 이동
+  document.addEventListener('touchmove', function(e) {
+    if (touchStartX === null || !mainEl) return;
+
+    const touchX = e.touches[0].clientX;
+    const touchY = e.touches[0].clientY;
+    const diffX = touchStartX - touchX;
+    const diffY = touchStartY - touchY;
+    const absX = Math.abs(diffX);
+    const absY = Math.abs(diffY);
+
+    if (!swipeAxis) {
+      if (absX < DIRECTION_LOCK_PX && absY < DIRECTION_LOCK_PX) return;
+      if (absY > absX * DIRECTION_LOCK_RATIO) { swipeAxis = 'vertical'; return; }
+      if (absX > absY * DIRECTION_LOCK_RATIO) swipeAxis = 'horizontal';
+      else return;
+    }
+
+    if (swipeAxis !== 'horizontal') return;
+
+    // 가로 스와이프 확정 시 상하 스크롤 차단
+    e.preventDefault();
+
+    // 경계 체크
+    if (diffX > 0 && !hasNextPage) return;
+    if (diffX < 0 && !hasPrevPage) return;
+
+    const intendedMode = diffX > 0 ? 'next' : 'prev';
+
+    // 가로 스크롤 영역이면 끝/처음이 아니면 스와이프 금지
+    if (!isScrollableAtEdge(scrollableEl, intendedMode)) return;
+
+    isSwiping = true;
+    swipeMode = intendedMode;
+
+    // 최대 15%까지만 이동
+    const screenWidth = window.innerWidth;
+    const maxDrag = screenWidth * MAX_DRAG_PERCENT;
+    const dragAmount = Math.min(absX, maxDrag);
+    const translateX = diffX > 0 ? -dragAmount : dragAmount;
+
+    mainEl.style.transition = 'none';
+    mainEl.style.transform = 'translate3d(' + translateX + 'px, 0, 0)';
+
+  }, { passive: false });
+
+  // 터치 종료
+  document.addEventListener('touchend', function() {
+    if (touchStartX === null || !mainEl) return;
+
+    if (!isSwiping) {
+      resetSwipe();
+      return;
+    }
+
+    const screenWidth = window.innerWidth;
+    const currentTransform = mainEl.style.transform;
+    const match = currentTransform.match(/translate3d\(([\-\d.]+)px/);
+    const currentX = match ? parseFloat(match[1]) : 0;
+    const dragPercent = Math.abs(currentX) / screenWidth;
+
+    // 속도 계산 (px/ms)
+    const elapsed = Date.now() - touchStartTime;
+    const velocity = elapsed > 0 ? Math.abs(currentX) / elapsed : 0;
+    const isFlick = velocity >= VELOCITY_THRESHOLD && Math.abs(currentX) > 30; // 30px 이상 + 빠른 속도
+
+    if ((dragPercent >= SWIPE_THRESHOLD || isFlick) && swipeMode) {
+      // 페이지 이동 (슬라이드 아웃 애니메이션)
+      const currentIdx = getCurrentNavIndex();
+      const targetIdx = swipeMode === 'next' ? getNextIndex(currentIdx) : getPrevIndex(currentIdx);
+      const targetPage = getPageByIndex(targetIdx);
+
+      if (targetPage) {
+        const url = targetPage === 'home' ? '/' : '/' + targetPage + '/';
+        setNavActiveIndex(targetIdx);
+        animateNavToIndex(targetIdx, SLIDE_OUT_MS);
+        slideOutAndNavigate(url, swipeMode);
+        return;
+      }
+    }
+
+    // threshold 미달 - 원위치
+    resetSwipe();
+    // 네비게이션도 현재 탭으로 복귀
+    scrollNavToIndex(getCurrentNavIndex(), true);
+  }, { passive: true });
+
+  document.addEventListener('touchcancel', function() {
+    resetSwipe();
+    scrollNavToIndex(getCurrentNavIndex(), true);
+  }, { passive: true });
+
+  function getNavScrollPosForIndex(idx) {
+    var navInner = document.querySelector('.nav-inner');
+    if (!navInner) return null;
+    var navItems = navInner.querySelectorAll('.nav-item');
+    var targetIdx = idx < 0 ? 0 : idx;
+    var targetItem = navItems[targetIdx];
+    if (!targetItem) return null;
+
+    var itemCenter = targetItem.offsetLeft + (targetItem.offsetWidth / 2);
+    var navCenter = navInner.clientWidth / 2;
+    var maxScroll = navInner.scrollWidth - navInner.clientWidth;
+    if (maxScroll <= 0) return 0;
+    return Math.max(0, Math.min(maxScroll, itemCenter - navCenter));
+  }
+
+  function animateNavToIndex(idx, durationMs) {
+    var navInner = document.querySelector('.nav-inner');
+    if (!navInner) return;
+
+    var scrollPos = getNavScrollPosForIndex(idx);
+    if (scrollPos === null || scrollPos === undefined) return;
+
+    window.__gcNavScrollOverrideLeft = scrollPos;
+    window.__gcNavScrollOverrideAt = Date.now();
+    try {
+      sessionStorage.setItem('gc_nav_scroll_state_v1', JSON.stringify({ left: scrollPos, at: Date.now() }));
+    } catch (e) {}
+
+    if (!durationMs || durationMs <= 0 || !window.requestAnimationFrame || !window.performance || !performance.now) {
+      navInner.scrollLeft = scrollPos;
+      return;
+    }
+
+    var start = navInner.scrollLeft || 0;
+    var delta = scrollPos - start;
+    if (Math.abs(delta) < 1) {
+      navInner.scrollLeft = scrollPos;
+      return;
+    }
+
+    var startTime = performance.now();
+    function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+    function step(now) {
+      var t = (now - startTime) / durationMs;
+      if (t > 1) t = 1;
+      navInner.scrollLeft = start + delta * easeOutCubic(t);
+      if (t < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  // 네비 캐러셀: 특정 인덱스로 스크롤 (-1: 홈, 0~: 섹션)
+  // nav에는 홈이 없음 (trend=0, games=1, ... metacritic=6)
+  // 1,2번 → 왼쪽 끝, 3,4,5번 → 가운데, 6,7번 → 오른쪽 끝
+  function scrollNavToIndex(idx, smooth) {
+    var navInner = document.querySelector('.nav-inner');
+    if (!navInner) return;
+    var navItems = navInner.querySelectorAll('.nav-item');
+    var targetIdx = idx < 0 ? 0 : idx;
+    var targetItem = navItems[targetIdx];
+    if (!targetItem) return;
+
+    // 아이템 중심을 nav 중심에 맞추기
+    var itemCenter = targetItem.offsetLeft + (targetItem.offsetWidth / 2);
+    var navCenter = navInner.clientWidth / 2;
+    var maxScroll = navInner.scrollWidth - navInner.clientWidth;
+    if (maxScroll <= 0) return;
+    var scrollPos = Math.max(0, Math.min(maxScroll, itemCenter - navCenter));
+
+    if (smooth && navInner.scrollTo) {
+      try {
+        navInner.scrollTo({ left: scrollPos, behavior: 'smooth' });
+        return;
+      } catch (e) {}
+    }
+    navInner.scrollLeft = scrollPos;
+  }
+
+  // 활성 탭으로 스크롤 (초기 로드는 애니메이션 없이)
+  function scrollNavToActive(smooth) {
+    scrollNavToIndex(getCurrentNavIndex(), !!smooth);
+  }
+
+  // 초기 로드 시 레이아웃/스타일 적용 전에는 값이 0으로 튈 수 있어 재시도
+  function initNavCarousel(attempt) {
+    attempt = attempt || 0;
+    var navInner = document.querySelector('.nav-inner');
+    if (!navInner) return;
+
+    if ((navInner.clientWidth <= 0 || navInner.scrollWidth <= navInner.clientWidth + 1) && attempt < 60) {
+      if (window.requestAnimationFrame) {
+        window.requestAnimationFrame(function() { initNavCarousel(attempt + 1); });
+      } else {
+        setTimeout(function() { initNavCarousel(attempt + 1); }, 16);
+      }
+      return;
+    }
+
+    var prevLeft = window.__gcNavPrevScrollLeft;
+    if (typeof prevLeft === 'number' && isFinite(prevLeft)) {
+      try { navInner.scrollLeft = prevLeft; } catch (e) {}
+    }
+
+    var shouldSmooth = window.__gcNavScrollRestored === '1';
+    scrollNavToActive(shouldSmooth);
+    window.__gcNavScrollRestored = '';
+    window.__gcNavPrevScrollLeft = null;
+  }
+
+  initNavCarousel(0);
+  window.addEventListener('pageshow', function(e) {
+    if (e && e.persisted) initNavCarousel(0);
+  });
+})();
+</script>
+  
+<script>
+(function() {
+  let lastScrollY = 0, isHidden = false;
+  function update() {
+    const currentScrollY = window.scrollY;
+    const delta = currentScrollY - lastScrollY;
+    if (currentScrollY <= 0) { if (isHidden) { document.body.classList.remove('search-hidden'); isHidden = false; } }
+    else if (delta < -10) { if (isHidden) { document.body.classList.remove('search-hidden'); isHidden = false; } }
+    else if (delta > 0 && currentScrollY > 80) { if (!isHidden) { document.body.classList.add('search-hidden'); isHidden = true; } }
+    lastScrollY = currentScrollY;
+  }
+  window.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+})();
+</script>
+</body>
+</html>

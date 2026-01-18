@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <!-- Critical CSS: 레이아웃(폭) 선적용 (Auto ads/Side rail 첫 로드 안정화) -->
+	  <style>
+	    :root { --space-page-x: 16px; }
+	    body { margin: 0; }
+	    :is(.site-container, .container) {
+	      max-width: 1190px;
+	      margin: 0 auto;
+	      padding-left: var(--space-page-x);
+	      padding-right: var(--space-page-x);
+	      box-sizing: border-box;
+	    }
+	    .header-inner {
+	      max-width: 1190px;
+	      margin: 0 auto;
+	      padding: 0 16px;
+	      box-sizing: border-box;
+	    }
+	    .nav-inner {
+	      max-width: 1190px;
+	      margin: 0 auto;
+	      padding: 0 var(--space-page-x);
+	      box-sizing: border-box;
+	    }
+	    @media (max-width: 768px) {
+	      body { width: 100%; max-width: 100vw; overscroll-behavior-x: none; }
+	      .header, .header-inner, .nav-inner { width: 100%; max-width: 100%; }
+	      .nav, .container, .site-container { width: 100%; max-width: 100%; }
+	    }
+	  </style>
+		  <script>
+		    (function() {
+		      var host = location.hostname;
+		      if (host === 'localhost' || host === '127.0.0.1' || host === '0.0.0.0') {
+		        document.documentElement.classList.add('is-localhost');
+		      } else if (host === 'gamerscrawl.com' || host === 'www.gamerscrawl.com') {
+		        var ua = navigator.userAgent || '';
+		        if (/Android|iPhone|iPad|iPod|Mobile|webOS|BlackBerry|IEMobile|Opera Mini/i.test(ua)) {
+		          location.replace('https://m.gamerscrawl.com' + location.pathname + location.search);
+		          return;
+		        }
+		      }
+		    })();
+		  </script>
+		  <title>게임 영상 - 유튜브 인기, 치지직 라이브</title>
+  <!-- SEO -->
+  <meta name="description" content="게임 영상 - 유튜브 인기, 치지직 라이브를 한눈에.">
+  <meta name="keywords" content="게임 영상, 유튜브 게임, 치지직 라이브, 게임 스트리밍">
+  <link rel="canonical" href="https://m.gamerscrawl.com/youtube/">
+  <!-- JSON-LD 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "게이머스크롤",
+    "alternateName": ["GAMERSCRAWL", "GAMERS CRAWL", "gamerscrawl.com", "게이머스크롤", "게이머 스크롤"],
+    "url": "https://gamerscrawl.com/",
+    "description": "게임 영상 - 유튜브 인기, 치지직 라이브를 한눈에.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "게이머스크롤",
+      "url": "https://gamerscrawl.com/"
+    }
+  }
+  </script>
+  <!-- Open Graph / SNS 공유 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="게임 영상 - 유튜브 인기, 치지직 라이브">
+  <meta property="og:description" content="게임 영상 - 유튜브 인기, 치지직 라이브를 한눈에.">
+  <meta property="og:image" content="https://gamerscrawl.com/og-image.png">
+  <meta property="og:url" content="https://m.gamerscrawl.com/youtube/">
+  <meta property="og:site_name" content="게이머스크롤">
+  <meta property="og:locale" content="ko_KR">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="게임 영상 - 유튜브 인기, 치지직 라이브">
+  <meta name="twitter:description" content="게임 영상 - 유튜브 인기, 치지직 라이브를 한눈에.">
+  <meta name="twitter:image" content="https://gamerscrawl.com/og-image.png">
+  <meta name="twitter:site" content="@gamerscrawl">
+  <meta name="twitter:creator" content="@gamerscrawl">
+  <!-- Theme & Favicon -->
+  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png">
+  <link rel="manifest" href="/manifest.json">
+  <!-- preconnect: AdSense + 광고 요청 + 폰트 CDN -->
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <!-- dns-prefetch: fallback + 이미지 CDN -->
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+  <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
+  <link rel="dns-prefetch" href="https://adservice.google.com">
+  <link rel="dns-prefetch" href="https://tpc.googlesyndication.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://play-lh.googleusercontent.com">
+  <link rel="dns-prefetch" href="https://is1-ssl.mzstatic.com">
+  <link rel="dns-prefetch" href="https://i.ytimg.com">
+  <link rel="dns-prefetch" href="https://cdn.cloudflare.steamstatic.com">
+	  <!-- Prefetch (load 이후, 네트워크 여건이 좋을 때만) -->
+	  <script>
+	    (function() {
+	      var urls = ['/trend/', '/news/', '/community/', '/youtube/', '/rankings/', '/steam/', '/upcoming/', '/metacritic/'];
+	      function shouldPrefetch() {
+	        var c = navigator.connection;
+	        if (!c) return true;
+	        if (c.saveData) return false;
+	        var type = String(c.effectiveType || '').toLowerCase();
+	        if (type.includes('2g')) return false;
+	        return true;
+	      }
+	      function addPrefetch() {
+	        if (!shouldPrefetch()) return;
+	        for (var i = 0; i < urls.length; i++) {
+	          var link = document.createElement('link');
+	          link.rel = 'prefetch';
+	          link.as = 'document';
+	          link.href = urls[i];
+	          document.head.appendChild(link);
+	        }
+	      }
+	      window.addEventListener('load', addPrefetch);
+	    })();
+	  </script>
+	  <!-- Font Preload -->
+		  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+		  <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff2/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
+		  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+			  <link rel="stylesheet" href="/styles.css">
+	  <!-- AdSense 스크립트 (async 권장) -->
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9477874183990825" crossorigin="anonymous"></script>
+		  <script async fetchpriority="low" src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+	  <!-- Firebase Analytics (프로덕션만) -->
+	  <script>
+	    // 페이지뷰 큐 (Firebase 로드 전 이벤트 저장) - 일반 스크립트로 즉시 실행
+	    (function() {
+	      var host = window.location.hostname;
+	      if (host !== 'gamerscrawl.com' && host !== 'm.gamerscrawl.com') return;
+	      window.__gcPageViewQueue = [];
+	      window.__gcLogPageView = function(path) {
+	        window.__gcPageViewQueue.push(path);
+	      };
+	    })();
+	  </script>
+	  <script type="module">
+	    (function() {
+	      var host = window.location.hostname;
+	      if (host !== 'gamerscrawl.com' && host !== 'm.gamerscrawl.com') return;
+
+	      (async function() {
+	        try {
+	          const [{ initializeApp }, { getAnalytics, logEvent }] = await Promise.all([
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js'),
+	            import('https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js')
+	          ]);
+	          const firebaseConfig = {
+	            apiKey: "AIzaSyBlVfvAGVrhEEMPKpDKJBrOPF7BINleV7I",
+	            authDomain: "gamerscrawl-b104b.firebaseapp.com",
+	            projectId: "gamerscrawl-b104b",
+	            storageBucket: "gamerscrawl-b104b.firebasestorage.app",
+	            messagingSenderId: "831886529376",
+	            appId: "1:831886529376:web:2d9f0f64782fa5e5e80405",
+	            measurementId: "G-2269FV044J"
+	          };
+	          const app = initializeApp(firebaseConfig);
+	          const analytics = getAnalytics(app);
+
+	          // 큐에 쌓인 페이지뷰 처리
+	          if (window.__gcPageViewQueue) {
+	            window.__gcPageViewQueue.forEach(function(path) {
+	              logEvent(analytics, 'page_view', {
+	                page_path: path,
+	                page_location: window.location.origin + path
+	              });
+	            });
+	          }
+
+	          // 실제 로깅 함수로 교체
+	          window.__gcLogPageView = function(path) {
+	            logEvent(analytics, 'page_view', {
+	              page_path: path,
+	              page_location: window.location.origin + path
+	            });
+	          };
+
+	          // 초기 페이지 로드 page_view 전송 (직접 접속 시)
+	          logEvent(analytics, 'page_view', {
+	            page_path: window.location.pathname,
+	            page_location: window.location.href
+	          });
+	        } catch (e) {}
+	      })();
+	    })();
+	  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+</head>
+<body class="page-youtube is-mobile">
+  
+  <header class="header">
+	    <div class="header-inner">
+	      <div class="header-title">
+	        <a href="/">
+	          <span class="visually-hidden">게이머스크롤 - 게임 트렌드, 순위, 뉴스를 한눈에</span>
+	          <svg class="logo-svg" viewBox="0 0 660 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+	            <defs>
+	              <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+	                <stop offset="0%" stop-color="#4f46e5" />
+	                <stop offset="100%" stop-color="#06b6d4" />
+	              </linearGradient>
+	            </defs>
+            <text class="logo-text-svg" x="50%" y="50%" dy="2" font-family="'Pretendard', -apple-system, sans-serif" font-size="62" font-weight="900" fill="currentColor" text-anchor="middle" dominant-baseline="middle" letter-spacing="-0.5">GAMERS CRAWL</text>
+            <!-- 왼쪽 안테나 -->
+            <rect x="8" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
+            <rect x="26" y="15" width="10" height="42" rx="5" fill="url(#techGrad)" opacity="0.7"/>
+            <rect x="44" y="6" width="10" height="60" rx="5" fill="url(#techGrad)"/>
+            <!-- 오른쪽 안테나 -->
+            <rect x="606" y="6" width="10" height="60" rx="5" fill="url(#techGrad)"/>
+            <rect x="624" y="15" width="10" height="42" rx="5" fill="url(#techGrad)" opacity="0.7"/>
+            <rect x="642" y="24" width="10" height="24" rx="5" fill="url(#techGrad)" opacity="0.4"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="search-container">
+    <div class="search-box">
+      <a href="/" class="search-home-icon" aria-label="홈으로 이동">
+        <img src="/favicon.svg" alt="" width="20" height="20">
+      </a>
+      <input type="text" class="search-input" placeholder="게임 검색" autocomplete="off">
+      <button class="search-btn" type="button" aria-label="검색">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </button>
+    </div>
+    <div class="search-dropdown"></div>
+  </div>
+  
+  <nav class="nav">
+    <div class="nav-inner">
+      
+      <a class="nav-item" href="/trend/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        뉴스
+      </a>
+      <a class="nav-item" href="/games/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        게임 DB
+      </a>
+      <a class="nav-item" href="/rankings/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+        모바일 순위
+      </a>
+      <a class="nav-item" href="/steam/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12h.01M18 12h.01"/><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 6v12"/></svg>
+        스팀 순위
+      </a>
+      <a class="nav-item active" href="/youtube/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        영상 순위
+      </a>
+      <a class="nav-item" href="/upcoming/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        출시 게임
+      </a>
+      <a class="nav-item" href="/metacritic/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        메타크리틱
+      </a>
+    </div>
+  </nav>
+  
+<script>
+(function() {
+  var KEY = 'gc_nav_scroll_state_v1';
+  var MAX_AGE_MS = 60000;
+
+  function save() {
+    try {
+      var overrideLeft = window.__gcNavScrollOverrideLeft;
+      var overrideAt = window.__gcNavScrollOverrideAt;
+      if (typeof overrideLeft === 'number' && isFinite(overrideLeft)) {
+        sessionStorage.setItem(KEY, JSON.stringify({ left: overrideLeft, at: overrideAt || Date.now() }));
+        window.__gcNavScrollOverrideLeft = null;
+        window.__gcNavScrollOverrideAt = null;
+        return;
+      }
+
+      var navInner = document.querySelector('.nav-inner');
+      if (!navInner) return;
+      var state = { left: navInner.scrollLeft || 0, at: Date.now() };
+      sessionStorage.setItem(KEY, JSON.stringify(state));
+    } catch (e) {}
+  }
+
+  function restore() {
+    try {
+      var raw = sessionStorage.getItem(KEY);
+      if (!raw) return;
+      var state = null;
+      try { state = JSON.parse(raw); } catch (e) { return; }
+      if (!state) return;
+
+      var at = parseInt(state.at, 10) || 0;
+      if (at && (Date.now() - at) > MAX_AGE_MS) {
+        try { sessionStorage.removeItem(KEY); } catch (e) {}
+        return;
+      }
+
+      var left = parseFloat(state.left);
+      if (!isFinite(left)) left = 0;
+
+      var navInner = document.querySelector('.nav-inner');
+      if (!navInner) return;
+      navInner.scrollLeft = left;
+      window.__gcNavScrollRestored = '1';
+      window.__gcNavPrevScrollLeft = left;
+      try { sessionStorage.removeItem(KEY); } catch (e) {}
+    } catch (e) {}
+  }
+
+  // nav 렌더 직후 즉시 복원
+  restore();
+
+  // nav 클릭/페이지 이탈 시 상태 저장
+  document.addEventListener('click', function(e) {
+    var link = e.target && e.target.closest ? e.target.closest('a.nav-item') : null;
+    if (!link) return;
+    save();
+  }, true);
+  window.addEventListener('pagehide', save);
+})();
+</script>
+  <main class="site-container">
+    
+    
+    <section class="section active" id="youtube">
+      
+      <div class="page-container">
+        <div class="ad-card ad-card-mobile-top ad-lazy">
+  <ins class="adsbygoogle"
+       style="display:inline-block;min-width:320px;min-height:100px"
+       data-ad-client="ca-pub-9477874183990825"
+       data-ad-slot="5825162341"></ins>
+</div>
+        <h1 class="visually-hidden">게임 영상 - 유튜브 인기, 치지직 라이브</h1>
+
+        <!-- 유튜브 인기 섹션 -->
+        <div class="home-card home-card-full video-section-card" data-section="youtube">
+          <div class="home-card-header">
+            <h2 class="home-card-title">유튜브 인기</h2>
+            <div class="video-pagination">
+              <button class="video-page-btn video-prev" aria-label="이전">‹</button>
+              <span class="video-page-index">1/1</span>
+              <button class="video-page-btn video-next" aria-label="다음">›</button>
+            </div>
+          </div>
+          <div class="home-card-body">
+            
+      <div class="youtube-grid">
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=GcLrQoUjV2I" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/GcLrQoUjV2I/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">Wolf</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">예술이다 예술│HLE vs T1│2026 LCK CUP│울챔스 하이라이트</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=87bLhKwPpYo" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/87bLhKwPpYo/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">랄로</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">배치고사라도 누군가는 닦아야 하니까</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=6g474rOs6uA" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/6g474rOs6uA/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">코마</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">1분마다 뒤바뀌는 시청자 100명 속에 잠입하기</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=59GFflBEkuY" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/59GFflBEkuY/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">PAKA</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">돌아온 말벌 베인</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=kPAWTPuG-OA" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/kPAWTPuG-OA/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">LCK</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">상혁이 운동 많이 된다 | T1 vs HLE 게임 2 하이라이트 | 2026 LCK CUP</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=EVaxZZxCfH0" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/EVaxZZxCfH0/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">프뚜</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">원 밖으로 못 나가는 마인크래프트 100일 생존기</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=hIHOgUaSdB4" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/hIHOgUaSdB4/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">말왕TV</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">폐급맨 진짜 해고 위기.. [마크 하드코어 EP.02]</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=grTadk3Z0O8" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/grTadk3Z0O8/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">괴물쥐 유튜브</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">협곡에 나타난 천꾸 제이스</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=XRgOPWisuog" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/XRgOPWisuog/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">Sylex</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">EXTREME SHARK GAME!!!</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=wTVzHRbgBSs" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/wTVzHRbgBSs/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">잡상싱</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">도전하는 사람만이 한계를 뛰어넘는다</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=NfKTDRDQdno" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/NfKTDRDQdno/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">Bang</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">대상혁ㅣT1 vs HLE ㅣ2026 LCK CUP</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=qR2KIdj1VS8" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/qR2KIdj1VS8/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">프로관전러 P.S</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">오너-페이커, 월즈모드 나오다.</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=zNu2ucA0t_8" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/zNu2ucA0t_8/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">멜로우TV</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">🔥잼/급못타 VS 99밤 스피드런 대결💥하면 누가 이길까? (솔직히 궁금함)</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=I7nAsYkEb3E" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/I7nAsYkEb3E/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">전략적죽음</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">시즌 16 챌린저 달성!!!😭 전세계 사이온 1등의 극한을 보여드리겠습니다 😎</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=AO_wWkdDoAw" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/AO_wWkdDoAw/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">[ALTUBE] 김성현TV</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">어제 게임 지고 화나서 내일 8시에 다시 붙자고 통보한 상대.. 다음 날 또 만났습니다ㅋㅋ</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=xz8kuj9unO4" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/xz8kuj9unO4/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">Untara</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">T1 2026년 매콤하게 시작합니다 | T1 vs HLE | 2026 LCK CUP</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=BkBzXF_eiio" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/BkBzXF_eiio/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">하네 HANE - 로블록스 게임채널</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">숲속에서 다들 ⛺캠핑 할 때 저는 🏨호텔을 만들었습니다 (로블록스)</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=yWfdX5BDa70" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/yWfdX5BDa70/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">주키니TV</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">어 군림보 기절</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=H0g6G2oGowo" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/H0g6G2oGowo/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">감스트GAMST</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">[롤] 감스트 이블린 정글 배치고사 놀라지마세요..LOL</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=BNTTK1cUqNA" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/BNTTK1cUqNA/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">혜안</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">디엠 2000통으로 추천받은 "아이스크림 게임" 이게 뭔데욬ㅋㅋㅋㅋ??</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=quRr48oW54M" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/quRr48oW54M/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">악어 유튜브</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">마크에이지 리턴즈3 불가피한 선택의 순간 7회차 4부 (완결) | 악어 마인크래프트 M.C.Age Returns 3</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=rolcYGyOgPY" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/rolcYGyOgPY/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">잠뜰 TV</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">잘 되는 요리 프로그램 만들겠다고 괴식까지 평가했다💀</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=y-RtihhdJwE" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/y-RtihhdJwE/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">저라뎃 JUSTLIKETHAT</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">날먹동선에 정신 못차리는 마스터 현지인들ㅋㅋㅋ</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=VDPL94TjPKo" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/VDPL94TjPKo/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">LCK Global</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">DNS vs DK - HLE vs T1 | 2026 LCK CUP</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=4OqjB9_H688" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/4OqjB9_H688/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">Joxy</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">STEAL A BRAINROT GIVEAWAY LIVE | STEAL A BRAINROT FREE SECRETS + FREE BRAINROT GODS</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=x-xRimE-X7g" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/x-xRimE-X7g/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">레고77</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">역대급 확률 터진 축캐 팔라딘</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=zSk2cFz5huY" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/zSk2cFz5huY/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">수삼티비</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">[ 1. 17 live ] 리니지m : 깡깡이 결전의 날, 오후9시 제작뽑기 승부! [ 수삼티비 ]</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=FIjeGTlbzF4" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/FIjeGTlbzF4/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">글자네</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">메소 억당 200원이 됐는데요..?</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=PgTinrIxJyo" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/PgTinrIxJyo/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">악동 김블루</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">3일동안 밤새서 가르쳤습니다.. 제자 백곰파님은 꼭 봐주세요</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=Dkrmz-lpAw0" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/Dkrmz-lpAw0/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">꽥</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">99밤 세계 1등 소멸이 99일 동안 꽥꽥탐험대 막내로 살기? (로블록스 99 나이트 인 더 포레스트)</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=kgKNYExzTWQ" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/kgKNYExzTWQ/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">불도그</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">[리니지클래식] 절대 강자는 없다: 데포로쥬 혼돈의 시대 시작! (ft.삼고초려 불도그)</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=kjyEoIWnKpM" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/kjyEoIWnKpM/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">유봉훈</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">300 급여 가성비 1황이라며!!!!!!!</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=d8mwYoAS8sY" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/d8mwYoAS8sY/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">왈도쿤</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">너무 고여서 심리전이 먹히지 않는 보드게임ㅋㅋㅋ</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=15Oya48mW5Y" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/15Oya48mW5Y/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">카사딘하는사람</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">역대급 레벨 신기록. "19분 16레벨 카사딘 강림💀" 뉴시즌 버그급 경험치 복사 빌드로 "초패스트 16레벨 전략"이 가능해진 미친 탑 카사딘.. 이거 지금 진짜 못 막습니다☠️</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=21qvlwfqNGI" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/21qvlwfqNGI/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">무지개맛 Rainbow Flavor</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">역대급 버그로 궁 한방에 1000조 버는 일론머스크 카서스</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=WlEjxkWG6Gw" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/WlEjxkWG6Gw/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">흔한남매</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">공포게임 태교? 실제 일본폐가에서 이상현상 찾아서 살아남기!!!</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=w1UkMYe8wJM" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/w1UkMYe8wJM/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">멘파</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">260111 지렁이게임 진득한 1등</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=u8k5bWBuqwc" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/u8k5bWBuqwc/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">마플 마인크래프트 채널</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">버튼을 누르면 뭐가 나올지 모름 ㅋㅋㅋㅋㅋㅋ (마인크래프트)</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=bgmDNShIPL4" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/bgmDNShIPL4/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">말량</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">브루노마스가 어떻게 브레인롯 훔치기에!? 거기다가 말도 안되게 희귀한 캔디 드래곤까지 등장 ㄷㄷㄷㄷ (로블록스 브레인롯 훔치기)</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=hwhf1YuHVpQ" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/hwhf1YuHVpQ/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">튜브김민교</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">욕풍 전자녀 가격 올려버린 두쫀교</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=5uOzUQNeSvs" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/5uOzUQNeSvs/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">수탉</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">틀리면 아주 뒤지는거여</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=juwD4okSUKM" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/juwD4okSUKM/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">강퀴TV</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">01.16｜T1 vs HLE 하이라이트｜2026 LCK CUP</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=Zfz-0oMCc20" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/Zfz-0oMCc20/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">군림보</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">배그 7탄 AR중에 유일하게 15배율이 장착되는 총</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=C3tGHneXQFk" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/C3tGHneXQFk/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">텔론</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">0.001% 운빨왕 스몰더</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=NcNGzwqPaVw" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/NcNGzwqPaVw/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">전쓰트의 게임 채널 Junsst</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">방한장갑 에코는 신이다 ㅋㅋㅋㅋㅋ</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=NovSn5MrqWs" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/NovSn5MrqWs/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">테스터훈 TesterHoon</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">롤토체스 공략 1위에게 순위 방어 100% 비법을 묻다.구루루 장인초대석 [테스터훈]</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=qkNOmpR0e5U" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/qkNOmpR0e5U/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">팔차선 [8LJAYWALKING]</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">자헨 우주 랭킹 1등 팔협지가 이 영상 하나로 자헨 사용법 종결합니다</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=HeqiZ5djkJQ" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/HeqiZ5djkJQ/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">김성회의 G식백과</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">아이온2는 엔씨의 소고기일까</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=JeaeaD9dk3k" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/JeaeaD9dk3k/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">두치와뿌꾸</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">본캐 초대박 났다;; 신규패키지 몸빵현질 다 사봤더니 ㄷㄷ</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://www.youtube.com/watch?v=cj65FPiuJX4" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://i.ytimg.com/vi/cj65FPiuJX4/mqdefault.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">Ju1st</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">티원 조합 난이도 너무 높은 거 아니에요? 3세트 | LCK컵 T1 vs HLE 스트리머 리액션 반응 모음</div>
+            </div>
+          </a>
+        
+      </div>
+    
+          </div>
+        </div>
+
+        <!-- 치지직 라이브 섹션 -->
+        <div class="home-card home-card-full video-section-card" data-section="chzzk">
+          <div class="home-card-header">
+            <h2 class="home-card-title">치지직 라이브</h2>
+            <div class="video-pagination">
+              <button class="video-page-btn video-prev" aria-label="이전">‹</button>
+              <span class="video-page-index">1/1</span>
+              <button class="video-page-btn video-next" aria-label="다음">›</button>
+            </div>
+          </div>
+          <div class="home-card-body">
+            
+      <div class="youtube-grid">
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/36ddb9bb4f17593b60f1b63cec86611d" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/42542106/live/16784441/record/49401930/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">사키하네 후야</span>
+              <span class="youtube-live">LIVE 5,767</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">에버리스 하드코어 엔더런 도전기☠️☠️☠️</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/2086f44c7b09a17cef6786f21389db3b" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441904/live/16782964/record/49384372/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">지누</span>
+              <span class="youtube-live">LIVE 5,032</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">[지누]</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/0dcec72cd1033032a77dfced6c0c91f8" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26995685/live/16784845/record/49404167/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">핑맨</span>
+              <span class="youtube-live">LIVE 3,313</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">치지직 최초 마크 워든 하코런 쉬운거 아님? ㅋ</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/1b0561f3051c10a24b9d8ec9a6cb3374" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26760407/live/16784656/record/49403005/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">둥그레</span>
+              <span class="youtube-live">LIVE 3,127</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">00즈 하코 엔더런( w. 둥그레, 허니츄러스, 채현찌, 양아지, 댕균)</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/c0d9723cbb75dc223c6aa8a9d4f56002" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26494546/live/16783852/record/49397778/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">허니츄러스</span>
+              <span class="youtube-live">LIVE 2,380</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">하드코어런 해도 되는거죠? w.00즈</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/e9c11510c1c6097a20b92ebcb289b26a" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27407721/live/16783841/record/49397701/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">조강현 그리고 스틸로</span>
+              <span class="youtube-live">LIVE 1,991</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">방 탈출 게임 뇌지컬 에매2</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/dc7fb0d085cfbbe90e11836e3b85b784" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26442431/live/16785104/record/49406119/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">강소연</span>
+              <span class="youtube-live">LIVE 1,906</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">인슈라오디드 어려움모드 ㄱ (집이쁘게지은사람누구야? 너무너무 좋다!!!!!!!!!!!)</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/a9ab391cdd3faef4ca2ee782e96e5c59" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441760/live/16779436/record/49371268/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">김나성</span>
+              <span class="youtube-live">LIVE 1,813</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">잘자협동전</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/effe648202c8f7fba081c2f2aeea1979" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26445174/live/16783409/record/49392034/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">꼴랑이</span>
+              <span class="youtube-live">LIVE 1,555</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">포켓몬타워 80층고고 </div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/a9b3377345a2a37e68a6072ba5e77fec" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27379049/live/16782528/record/49378834/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">정령왕임</span>
+              <span class="youtube-live">LIVE 1,330</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">마크 하드코어 엔더런 1일차 (훈수 자유) </div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/0e604eba7206f04b1e5f15e0a1cb2616" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26646392/live/16785217/record/49407101/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">채현찌</span>
+              <span class="youtube-live">LIVE 1,329</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">00즈 하코엔더런 선생님 ^^</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/80b36a0ae8e887e893ce0014dbfece4a" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441957/live/16784227/record/49400449/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">나나양</span>
+              <span class="youtube-live">LIVE 1,245</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">((⭐)) 배그 스쿼드는 더 못하는 사람 😎</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/f39c3d74e33a81ab3080356b91bb8de5" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441915/live/16784806/record/49403826/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">포셔</span>
+              <span class="youtube-live">LIVE 1,161</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">난이도 세분화의 로스트아크</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/65c3035bdc598c81f15a8fe0e958b3ce" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27937639/live/16782988/record/49384736/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">초승달</span>
+              <span class="youtube-live">LIVE 1,129</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">하드코어 어슬렁...4지구부터 지구바뀔때마다 구독권 </div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/1bde12e163ccc7ac25ab0362fdf9faa4" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26629750/live/16783057/record/49385975/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">김펭귄</span>
+              <span class="youtube-live">LIVE 1,157</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">안녕하세요</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/8b3e8e3a13201cff0836c69cfab62f45" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26449182/live/16784371/record/49401487/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">플레임</span>
+              <span class="youtube-live">LIVE 1,052</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">탑으로 등반하기</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/3e825479d71ead63b76de0d6f6b5dc83" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26588338/live/16784757/record/49403511/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">양아지</span>
+              <span class="youtube-live">LIVE 921</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">2시 00즈 하코엔더런;;;;;; ૮ ・ﻌ・ა </div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/21a0de8b586c517181d76f183272de57" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26488982/live/16782906/record/49383534/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">헤징</span>
+              <span class="youtube-live">LIVE 962</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">본캐 티어 정상화 됐다 드가장</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/bee4b42475b5937226b8b7ccbe2eb2dc" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26479964/live/16782320/record/49376014/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">칸데르니아</span>
+              <span class="youtube-live">LIVE 961</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">압긍 갓?겜? 워블리 라이프 해보기</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/de27c33ee2364c4e5007867bb3b96001" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26480057/live/16783586/record/49394772/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">크랭크</span>
+              <span class="youtube-live">LIVE 797</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">스타 II 중국 오프라인 올스타 레전드 매치</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/6ccaebc2569f62344c6fc257f8f2b9ad" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/41011236/live/16785626/record/49409570/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">엘시v</span>
+              <span class="youtube-live">LIVE 831</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">인슈라 서프라이즈~ !편집자 !썸네일러</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/2c3d33db0543d96700ec6d1ad83090a2" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441756/live/16783951/record/49398372/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">햇살살</span>
+              <span class="youtube-live">LIVE 753</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">💎 제발 겸손하고 또 겸손하게 오늘은 진짜진짜진짜 깨고싶다 엔더드래곤 홈런패턴은 근데 어케피함 ٩₍ ᐢ. ̫ .ᐢ ₎و</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/dcf7dbd0f97a33551d9abb68ee88fe0b" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26557346/live/16785847/record/49410821/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">김마재</span>
+              <span class="youtube-live">LIVE 762</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">블루아카이브 일섭 5주년 공방 대기방 </div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/4b00ded9b083e31c29dc509d7e063c7a" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26455658/live/16783681/record/49395912/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">치킨쿤</span>
+              <span class="youtube-live">LIVE 642</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">🐔카파퀘스트 거의 다깸 2~3개남은듯</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/7c4c49fd3a34ce68e84075f5b44fe8c8" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/36700519/live/16783900/record/49397982/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">네무 of HANAVI</span>
+              <span class="youtube-live">LIVE 663</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">[하나비] 레쯔고 문따'개'</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/6409e8b0e890d79233c1a3e1d391bee8" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27043121/live/16781979/record/49374874/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">에임봇</span>
+              <span class="youtube-live">LIVE 485</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">e36 응원방 </div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/4bd1407e53e528417318cba6b33c1c91" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27306906/live/16782585/record/49379724/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">아리수 아카이브</span>
+              <span class="youtube-live">LIVE 305</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">블루아카 일섭 5주년 방송 2일차 같이 보기</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/29710a53f37c2f31b0862ed8ce678e44" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26482419/live/16782487/record/49378097/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">죠니월드</span>
+              <span class="youtube-live">LIVE 554</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">🍓메 본섭 4천억 세팅 마무리 드가자</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/98d1282009b3d0014e8457450a021f2d" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26602272/live/16784065/record/49399284/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">미르다요</span>
+              <span class="youtube-live">LIVE 352</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">1시 물젖통 10티어 승격전 / 민쟁이 vs 포키쨩 / 민원 24시</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/f26f5a2d1336f15cb2f3bc9513ab2501" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26605626/live/16785449/record/49408868/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">청묘</span>
+              <span class="youtube-live">LIVE 535</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">다들 샤타 대성공하셨나요?</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/1768688cc13b33839370db9a51361a5a" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27862931/live/16784844/record/49404154/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">와팬</span>
+              <span class="youtube-live">LIVE 94</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">야호 귤 까묵어야제~ \ ^ >^ //</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/b628d1039a84ecc703804e17acee2eb3" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441888/live/16782113/record/49375103/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">크캣</span>
+              <span class="youtube-live">LIVE 660</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">LCK 전까지 챌린저 가는길 `^`;</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/5af790a9d22abab8524ff7729a63cfc0" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26630301/live/16782394/record/49376848/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">거터</span>
+              <span class="youtube-live">LIVE 583</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">스톤샤드</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/371f95608d4571bdac607270e8b955c3" target="_blank">
+            <div class="youtube-thumb youtube-thumb-empty">
+              
+              <span class="youtube-tag">매드라이프 MadLife</span>
+              <span class="youtube-live">LIVE 524</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">림버스 9장 하편 감상</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/09f2c3d669fb6ef362f2d78029fc4300" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26590714/live/16779839/record/49371760/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">쫀지</span>
+              <span class="youtube-live">LIVE 503</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">세르카 나메 건슬링어   로스트아크 쫀지</div>
+            </div>
+          </a>
+        
+          <a class="youtube-card" href="https://chzzk.naver.com/live/5ecc1df94b5f156fc2de46afb477e808" target="_blank">
+            <div class="youtube-thumb">
+              <img src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27461237/live/16782726/record/49381755/thumbnail/image_480.jpg" alt="" loading="lazy" decoding="async">
+              <span class="youtube-tag">세코코</span>
+              <span class="youtube-live">LIVE 460</span>
+            </div>
+            <div class="youtube-info">
+              <div class="youtube-title">오늘은 꼭 깨보자..</div>
+            </div>
+          </a>
+        
+      </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+  <script>
+    // 각 섹션별 페이지네이션
+    (function() {
+      const getPageSize = () => window.innerWidth <= 768 ? 4 : 8;
+
+      document.querySelectorAll('.video-section-card').forEach(section => {
+        const prevBtn = section.querySelector('.video-prev');
+        const nextBtn = section.querySelector('.video-next');
+        const pageIndex = section.querySelector('.video-page-index');
+        const items = section.querySelectorAll('.youtube-card');
+
+        if (!items.length) return;
+
+        let currentPage = 0;
+
+        function updatePagination() {
+          const PAGE_SIZE = getPageSize();
+          const totalPages = Math.ceil(items.length / PAGE_SIZE) || 1;
+
+          items.forEach((item, i) => {
+            const start = currentPage * PAGE_SIZE;
+            const end = start + PAGE_SIZE;
+            item.style.display = (i >= start && i < end) ? '' : 'none';
+          });
+
+          pageIndex.textContent = (currentPage + 1) + '/' + totalPages;
+          prevBtn.disabled = currentPage <= 0;
+          nextBtn.disabled = currentPage >= totalPages - 1;
+        }
+
+        prevBtn.addEventListener('click', () => {
+          if (currentPage > 0) {
+            currentPage--;
+            updatePagination();
+          }
+        });
+        nextBtn.addEventListener('click', () => {
+          const PAGE_SIZE = getPageSize();
+          const totalPages = Math.ceil(items.length / PAGE_SIZE) || 1;
+          if (currentPage < totalPages - 1) {
+            currentPage++;
+            updatePagination();
+          }
+        });
+
+        window.addEventListener('resize', () => {
+          const PAGE_SIZE = getPageSize();
+          const totalPages = Math.ceil(items.length / PAGE_SIZE) || 1;
+          if (currentPage >= totalPages) currentPage = totalPages - 1;
+          updatePagination();
+        });
+
+        updatePagination();
+      });
+    })();
+  </script>
+  </main>
+  
+	  <!-- Footer -->
+	  <footer class="site-footer">
+	    <span>© 2026 게이머스크롤</span>
+	    <span class="footer-divider">|</span>
+	    <a href="/privacy/" class="footer-privacy-link" data-modal-open="privacy-modal">개인정보처리방침</a>
+	  </footer>
+
+	  <!-- Privacy Modal -->
+	  <div id="privacy-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+	    <div class="modal-content">
+	      <button class="modal-close" type="button" data-modal-close="privacy-modal" aria-label="닫기">&times;</button>
+	      <h2>개인정보처리방침</h2>
+	      <p>게이머스크롤(이하 "본 사이트")은 「개인정보 보호법」 및 관련 법령에 따라 이용자의 개인정보를 보호하고, 이와 관련된 고충을 신속하게 처리하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다.</p>
+
+      <h3>1. 개인정보의 수집 항목 및 방법</h3>
+      <p>본 사이트는 별도의 회원가입 절차 없이 모든 서비스를 이용할 수 있으며, 이용자로부터 이름, 이메일, 연락처 등의 개인정보를 직접 수집하지 않습니다.</p>
+
+      <h3>2. 자동으로 수집되는 정보</h3>
+      <p>서비스 이용 과정에서 아래와 같은 정보가 자동으로 생성되어 수집될 수 있습니다:</p>
+      <ul class="privacy-modal-list">
+        <li>접속 기기 정보 (기기 유형, 운영체제, 브라우저 종류)</li>
+        <li>접속 로그 (접속 일시, 방문 페이지, 체류 시간)</li>
+        <li>IP 주소 (익명화 처리됨)</li>
+      </ul>
+      <p>이 정보는 Google Analytics를 통해 수집되며, 개인을 식별할 수 없는 통계 형태로만 활용됩니다.</p>
+
+      <h3>3. 개인정보의 보유 및 이용 기간</h3>
+      <p>자동 수집된 정보는 수집일로부터 최대 26개월간 보관되며, 이후 자동으로 파기됩니다.</p>
+
+      <h3>4. 쿠키(Cookie)의 사용</h3>
+      <p>본 사이트는 이용자의 편의를 위해 쿠키를 사용합니다. 쿠키는 웹사이트 운영에 필요한 기술적 정보를 저장하며, 이용자는 브라우저 설정을 통해 쿠키 저장을 거부할 수 있습니다.</p>
+
+      <h3>5. 개인정보의 제3자 제공</h3>
+      <p>본 사이트는 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만, Google Analytics 서비스 이용을 위해 익명화된 통계 데이터가 Google에 전송될 수 있습니다.</p>
+
+      <h3>6. 정책 변경</h3>
+      <p>본 개인정보처리방침은 법령 또는 서비스 변경에 따라 수정될 수 있으며, 변경 시 본 페이지를 통해 공지합니다.</p>
+
+      <p class="privacy-modal-effective-date">시행일자: 2025년 12월 4일</p>
+    </div>
+  </div>
+
+  
+<script>
+(function() {
+  function openModal(modal) { if (modal) { modal.classList.add('is-open'); modal.setAttribute('aria-hidden', 'false'); } }
+  function closeModal(modal) { if (modal) { modal.classList.remove('is-open'); modal.setAttribute('aria-hidden', 'true'); } }
+  document.querySelectorAll('[data-modal-open]').forEach(t => t.addEventListener('click', (e) => { e.preventDefault(); openModal(document.getElementById(t.getAttribute('data-modal-open'))); }));
+  document.querySelectorAll('[data-modal-close]').forEach(b => b.addEventListener('click', (e) => { e.preventDefault(); closeModal(document.getElementById(b.getAttribute('data-modal-close')) || b.closest('.modal-overlay')); }));
+  document.querySelectorAll('.modal-overlay').forEach(m => m.addEventListener('click', (e) => { if (e.target === m) closeModal(m); }));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { const m = document.querySelector('.modal-overlay.is-open'); if (m) closeModal(m); } });
+})();
+</script>
+  
+<script>
+(function() {
+  function initLazyAds() {
+    var lazyAds = document.querySelectorAll('.ad-lazy .adsbygoogle:not([data-ad-loaded])');
+    if (!lazyAds.length) return;
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var ad = entry.target;
+            if (ad.dataset.adLoaded) return;
+            ad.dataset.adLoaded = '1';
+            try {
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {}
+            observer.unobserve(ad);
+          }
+        });
+      }, {
+        rootMargin: '500px 0px' // 모바일: 뷰포트 500px 전에 미리 로드
+      });
+
+      lazyAds.forEach(function(ad) {
+        observer.observe(ad);
+      });
+    } else {
+      // IntersectionObserver 미지원 브라우저: 즉시 로드
+      lazyAds.forEach(function(ad) {
+        if (ad.dataset.adLoaded) return;
+        ad.dataset.adLoaded = '1';
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {}
+      });
+    }
+  }
+
+  // DOM 준비 후 실행
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLazyAds);
+  } else {
+    initLazyAds();
+  }
+})();
+</script>
+  
+<script>
+(function() {
+  function applyFallback(img) {
+    if (!img || img.tagName !== 'IMG' || img.dataset.gcFallback === '1') return;
+    img.dataset.gcFallback = '1';
+    const action = img.dataset.imgFallback || '';
+    if (action === 'hide') img.style.display = 'none';
+    else if (action === 'parent-hide' && img.parentElement) img.parentElement.style.display = 'none';
+  }
+  document.addEventListener('error', (e) => { if (e.target && e.target.tagName === 'IMG') applyFallback(e.target); }, true);
+})();
+</script>
+  
+<script>
+(function() {
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => document.documentElement.classList.add('fonts-loaded'));
+  else setTimeout(() => document.documentElement.classList.add('fonts-loaded'), 100);
+  function parseTwemoji() {
+    if (window.__gcTwemojiParsed || typeof twemoji === 'undefined') return;
+    twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+    window.__gcTwemojiParsed = '1';
+  }
+  parseTwemoji();
+  window.addEventListener('load', parseTwemoji);
+})();
+</script>
+  
+<script>
+(function() {
+  const RECENT_STORAGE_KEY = 'gamerscrawl_recent_searches';
+  const MAX_RECENT = 8;
+  const SEARCH_INDEX_URL = '/games/search-index.json';
+  const SEARCH_INDEX_CACHE_KEY = 'gamerscrawl_search_index_v1';
+  let gamesData = [];
+  let gamesDataLoaded = false;
+  let gamesDataPromise = null;
+
+  function getRecentSearches() {
+    try { return JSON.parse(localStorage.getItem(RECENT_STORAGE_KEY)) || []; }
+    catch { return []; }
+  }
+
+  function saveRecentSearch(game) {
+    const recent = getRecentSearches().filter(g => g.slug !== game.slug);
+    recent.unshift(game);
+    localStorage.setItem(RECENT_STORAGE_KEY, JSON.stringify(recent.slice(0, MAX_RECENT)));
+  }
+
+  function removeRecentSearch(slug) {
+    const recent = getRecentSearches().filter(g => g.slug !== slug);
+    localStorage.setItem(RECENT_STORAGE_KEY, JSON.stringify(recent));
+  }
+
+  function clearAllRecent() {
+    localStorage.removeItem(RECENT_STORAGE_KEY);
+  }
+
+  async function loadGamesDataOnce() {
+    if (gamesDataLoaded) return;
+    if (gamesDataPromise) return gamesDataPromise;
+    gamesDataPromise = (async () => {
+      try {
+        const cached = sessionStorage.getItem(SEARCH_INDEX_CACHE_KEY);
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          gamesData = Array.isArray(parsed) ? parsed : (parsed.games || []);
+          gamesDataLoaded = true;
+          return;
+        }
+      } catch {}
+      try {
+        const response = await fetch(SEARCH_INDEX_URL);
+        if (!response.ok) return;
+        const data = await response.json();
+        gamesData = Array.isArray(data) ? data : (data.games || []);
+        try { sessionStorage.setItem(SEARCH_INDEX_CACHE_KEY, JSON.stringify(gamesData)); } catch {}
+      } catch (e) {
+        gamesData = [];
+      } finally {
+        gamesDataLoaded = true;
+      }
+    })();
+    return gamesDataPromise;
+  }
+
+  const searchInput = document.querySelector('.search-input');
+  const searchDropdown = document.querySelector('.search-dropdown');
+  if (!searchInput || !searchDropdown) return;
+
+  function renderRecentSearches() {
+    const recent = getRecentSearches();
+    if (recent.length === 0) {
+      searchDropdown.innerHTML = '<div class="search-no-results">최근 본 게임이 없습니다</div>';
+    } else {
+      const header = '<div class="search-recent-header"><span class="search-recent-title">최근 본 게임</span><button class="search-clear-all" type="button">전체 삭제</button></div>';
+      const items = recent.map(game => {
+        return '<div class="search-result-item" data-slug="' + game.slug + '" data-href="/games/' + game.slug + '/"><a href="/games/' + game.slug + '/" class="search-result-info"><div class="search-result-title">' + game.name + '</div></a><button class="search-result-delete" type="button" data-slug="' + game.slug + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>';
+      }).join('');
+      searchDropdown.innerHTML = header + items;
+      const clearAllBtn = searchDropdown.querySelector('.search-clear-all');
+      if (clearAllBtn) clearAllBtn.addEventListener('click', (e) => { e.stopPropagation(); clearAllRecent(); renderRecentSearches(); });
+      searchDropdown.querySelectorAll('.search-result-delete').forEach(btn => {
+        btn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); removeRecentSearch(btn.dataset.slug); renderRecentSearches(); });
+      });
+      // 최근 본 게임 클릭 시 페이지 이동
+      searchDropdown.querySelectorAll('.search-result-item[data-href]').forEach(item => {
+        item.addEventListener('click', (e) => {
+          if (e.target.closest('.search-result-delete')) return;
+          e.preventDefault();
+          const href = item.dataset.href;
+          searchDropdown.classList.remove('active');
+          searchInput.blur();
+          window.location.href = href;
+        });
+      });
+    }
+    searchDropdown.classList.add('active');
+  }
+
+  let currentResults = [];
+
+  function performSearch(query) {
+    if (!query || query.length < 1) { currentResults = []; renderRecentSearches(); return; }
+    if (!gamesDataLoaded) {
+      searchDropdown.innerHTML = '<div class="search-no-results">검색 데이터를 불러오는 중...</div>';
+      searchDropdown.classList.add('active');
+      loadGamesDataOnce().then(() => performSearch(query));
+      return;
+    }
+    const lowerQuery = query.toLowerCase();
+    currentResults = gamesData.filter(game => {
+      const name = (game.name || game.title || '').toLowerCase();
+      const developer = (game.developer || game.publisher || '').toLowerCase();
+      const aliases = Array.isArray(game.aliases) ? game.aliases : [];
+      return name.includes(lowerQuery) || developer.includes(lowerQuery) || aliases.some(a => (a || '').toLowerCase().includes(lowerQuery));
+    }).slice(0, 10);
+
+    if (currentResults.length === 0) {
+      searchDropdown.innerHTML = '<div class="search-no-results">검색 결과가 없습니다</div>';
+    } else {
+      searchDropdown.innerHTML = currentResults.map(game => {
+        const name = game.name || game.title || '';
+        const slug = game.slug || game.id || '';
+        return '<a href="/games/' + slug + '/" class="search-result-item" data-game=\'' + JSON.stringify({slug, name}).replace(/'/g, "\\'") + '\'><div class="search-result-info"><div class="search-result-title">' + name + '</div></div></a>';
+      }).join('');
+      // 검색 결과 클릭 시 페이지 이동
+      searchDropdown.querySelectorAll('.search-result-item[data-game]').forEach(item => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault();
+          try { saveRecentSearch(JSON.parse(item.dataset.game)); } catch {}
+          const href = item.getAttribute('href');
+          searchDropdown.classList.remove('active');
+          searchInput.blur();
+          window.location.href = href;
+        });
+      });
+    }
+    searchDropdown.classList.add('active');
+  }
+
+  let debounceTimer;
+  const debouncedSearch = (func, delay) => (...args) => { clearTimeout(debounceTimer); debounceTimer = setTimeout(() => func(...args), delay); };
+  const search = debouncedSearch(performSearch, 200);
+
+  searchInput.addEventListener('input', (e) => search(e.target.value.trim()));
+  searchInput.addEventListener('focus', () => { loadGamesDataOnce(); if (!searchInput.value.trim()) renderRecentSearches(); else performSearch(searchInput.value.trim()); });
+  document.addEventListener('click', (e) => { if (!e.target.closest('.search-container') && !e.target.closest('.nav-search-btn')) searchDropdown.classList.remove('active'); });
+  searchDropdown.addEventListener('mousedown', (e) => e.preventDefault());
+
+  // nav 검색 버튼 클릭 시 검색 드롭다운 열기
+  const navSearchBtn = document.querySelector('.nav-search-btn');
+  if (navSearchBtn) {
+    navSearchBtn.addEventListener('click', () => {
+      searchInput.focus();
+      loadGamesDataOnce();
+      renderRecentSearches();
+    });
+  }
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (!query) return;
+    var searchUrl = '/games/?q=' + encodeURIComponent(query);
+    window.location.href = searchUrl;
+  }
+
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { searchInput.value = ''; searchDropdown.classList.remove('active'); searchInput.blur(); }
+    else if (e.key === 'Enter') { doSearch(); }
+  });
+
+  const searchBtn = document.querySelector('.search-btn');
+  if (searchBtn) searchBtn.addEventListener('click', doSearch);
+})();
+</script>
+  
+<script>
+(function() {
+  const navSections = ['trend', 'games', 'rankings', 'steam', 'youtube', 'upcoming', 'metacritic'];
+
+  const SWIPE_THRESHOLD = 0.10; // 10% 넘으면 페이지 이동
+  const MAX_DRAG_PERCENT = 0.15; // 최대 15%까지 화면 이동
+  const TRANSITION_MS = 120;
+  const SLIDE_OUT_MS = 80; // 슬라이드 아웃 애니메이션 시간
+  const DIRECTION_LOCK_PX = 10;
+  const DIRECTION_LOCK_RATIO = 1.2;
+  const VELOCITY_THRESHOLD = 0.5; // 속도 임계값 (px/ms) - 빠른 플릭 감지
+
+  let originalNavIdx = null;
+  let previewNavIdx = null;
+
+  function setNavActiveIndex(idx) {
+    if (previewNavIdx === idx) return;
+    previewNavIdx = idx;
+
+    var navInner = document.querySelector('.nav-inner');
+    if (!navInner) return;
+    var navItems = navInner.querySelectorAll('.nav-item');
+    for (var i = 0; i < navItems.length; i++) navItems[i].classList.remove('active');
+    if (idx >= 0 && navItems[idx]) navItems[idx].classList.add('active');
+  }
+
+  let touchStartX = null;
+  let touchStartY = null;
+  let touchStartTime = null; // 속도 계산용
+  let swipeAxis = null;
+  let isSwiping = false;
+  let swipeMode = null;
+  let hasPrevPage = false;
+  let hasNextPage = false;
+  let scrollableEl = null;
+  let mainEl = null;
+
+  function getCurrentNavIndex() {
+    const path = window.location.pathname;
+    for (let i = 0; i < navSections.length; i++) {
+      if (path.includes(navSections[i])) return i;
+    }
+    return -1;
+  }
+
+  function getPrevIndex(idx) {
+    if (idx === -1) return navSections.length - 1; // 홈 → 마지막 섹션 (순환)
+    if (idx === 0) return -1;
+    return idx - 1;
+  }
+
+  function getNextIndex(idx) {
+    if (idx === -1) return 0;
+    if (idx >= navSections.length - 1) return -1; // 마지막 → 홈 (순환)
+    return idx + 1;
+  }
+
+  function getPageByIndex(idx) {
+    if (idx === null || idx === undefined) return null;
+    if (idx < 0) return 'home';
+    return navSections[idx] || null;
+  }
+
+  // 스크롤 가능한 요소(가로 스크롤) 찾기
+  function findScrollableElement(el) {
+    while (el && el !== document.body) {
+      if (el.classList && el.classList.contains('chart-scroll') && el.scrollWidth > el.clientWidth) {
+        return el;
+      }
+      el = el.parentElement;
+    }
+    return null;
+  }
+
+  // 가로 스크롤 요소면 끝/처음에서만 페이지 스와이프 허용
+  function isScrollableAtEdge(el, direction) {
+    if (!el) return true;
+    const isAtStart = el.scrollLeft <= 1;
+    const isAtEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 1;
+    return direction === 'next' ? isAtEnd : isAtStart;
+  }
+
+  function resetSwipe() {
+    if (originalNavIdx !== null && originalNavIdx !== undefined) {
+      setNavActiveIndex(originalNavIdx);
+      originalNavIdx = null;
+      previewNavIdx = null;
+    }
+    if (mainEl) {
+      mainEl.style.transition = 'transform ' + TRANSITION_MS + 'ms ease-out';
+      mainEl.style.transform = '';
+      setTimeout(function() {
+        if (mainEl) mainEl.style.transition = '';
+      }, TRANSITION_MS);
+    }
+    touchStartX = null;
+    touchStartY = null;
+    touchStartTime = null;
+    swipeAxis = null;
+    isSwiping = false;
+    swipeMode = null;
+    scrollableEl = null;
+    isOnAd = false;
+  }
+
+  // 슬라이드 아웃 후 페이지 이동
+  function slideOutAndNavigate(url, direction) {
+    if (!mainEl) {
+      window.location.href = url;
+      return;
+    }
+    const screenWidth = window.innerWidth;
+    const targetX = direction === 'next' ? -screenWidth : screenWidth;
+    mainEl.style.transition = 'transform ' + SLIDE_OUT_MS + 'ms ease-in';
+    mainEl.style.transform = 'translate3d(' + targetX + 'px, 0, 0)';
+    setTimeout(function() {
+      window.location.href = url;
+    }, SLIDE_OUT_MS);
+  }
+
+  // 터치 시작
+  document.addEventListener('touchstart', function(e) {
+    if (!e.touches || e.touches.length > 1) return;
+
+    const t = e.target;
+    // nav 영역, 검색 드롭다운, 모달, 입력 필드, 광고 제외
+    if (t && t.closest && t.closest('.nav, .nav-inner, .search-dropdown, .modal-overlay, input, textarea, .ad-card, .adsbygoogle')) return;
+
+    mainEl = document.querySelector('main.site-container');
+    if (!mainEl) return;
+
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    touchStartTime = Date.now();
+    swipeAxis = null;
+    isSwiping = false;
+    swipeMode = null;
+
+    originalNavIdx = getCurrentNavIndex();
+    previewNavIdx = originalNavIdx;
+
+    scrollableEl = findScrollableElement(e.target);
+
+    const idx = getCurrentNavIndex();
+    hasPrevPage = getPrevIndex(idx) !== null;
+    hasNextPage = getNextIndex(idx) !== null;
+  }, { passive: true });
+
+  // 터치 이동
+  document.addEventListener('touchmove', function(e) {
+    if (touchStartX === null || !mainEl) return;
+
+    const touchX = e.touches[0].clientX;
+    const touchY = e.touches[0].clientY;
+    const diffX = touchStartX - touchX;
+    const diffY = touchStartY - touchY;
+    const absX = Math.abs(diffX);
+    const absY = Math.abs(diffY);
+
+    if (!swipeAxis) {
+      if (absX < DIRECTION_LOCK_PX && absY < DIRECTION_LOCK_PX) return;
+      if (absY > absX * DIRECTION_LOCK_RATIO) { swipeAxis = 'vertical'; return; }
+      if (absX > absY * DIRECTION_LOCK_RATIO) swipeAxis = 'horizontal';
+      else return;
+    }
+
+    if (swipeAxis !== 'horizontal') return;
+
+    // 가로 스와이프 확정 시 상하 스크롤 차단
+    e.preventDefault();
+
+    // 경계 체크
+    if (diffX > 0 && !hasNextPage) return;
+    if (diffX < 0 && !hasPrevPage) return;
+
+    const intendedMode = diffX > 0 ? 'next' : 'prev';
+
+    // 가로 스크롤 영역이면 끝/처음이 아니면 스와이프 금지
+    if (!isScrollableAtEdge(scrollableEl, intendedMode)) return;
+
+    isSwiping = true;
+    swipeMode = intendedMode;
+
+    // 최대 15%까지만 이동
+    const screenWidth = window.innerWidth;
+    const maxDrag = screenWidth * MAX_DRAG_PERCENT;
+    const dragAmount = Math.min(absX, maxDrag);
+    const translateX = diffX > 0 ? -dragAmount : dragAmount;
+
+    mainEl.style.transition = 'none';
+    mainEl.style.transform = 'translate3d(' + translateX + 'px, 0, 0)';
+
+  }, { passive: false });
+
+  // 터치 종료
+  document.addEventListener('touchend', function() {
+    if (touchStartX === null || !mainEl) return;
+
+    if (!isSwiping) {
+      resetSwipe();
+      return;
+    }
+
+    const screenWidth = window.innerWidth;
+    const currentTransform = mainEl.style.transform;
+    const match = currentTransform.match(/translate3d\(([\-\d.]+)px/);
+    const currentX = match ? parseFloat(match[1]) : 0;
+    const dragPercent = Math.abs(currentX) / screenWidth;
+
+    // 속도 계산 (px/ms)
+    const elapsed = Date.now() - touchStartTime;
+    const velocity = elapsed > 0 ? Math.abs(currentX) / elapsed : 0;
+    const isFlick = velocity >= VELOCITY_THRESHOLD && Math.abs(currentX) > 30; // 30px 이상 + 빠른 속도
+
+    if ((dragPercent >= SWIPE_THRESHOLD || isFlick) && swipeMode) {
+      // 페이지 이동 (슬라이드 아웃 애니메이션)
+      const currentIdx = getCurrentNavIndex();
+      const targetIdx = swipeMode === 'next' ? getNextIndex(currentIdx) : getPrevIndex(currentIdx);
+      const targetPage = getPageByIndex(targetIdx);
+
+      if (targetPage) {
+        const url = targetPage === 'home' ? '/' : '/' + targetPage + '/';
+        setNavActiveIndex(targetIdx);
+        animateNavToIndex(targetIdx, SLIDE_OUT_MS);
+        slideOutAndNavigate(url, swipeMode);
+        return;
+      }
+    }
+
+    // threshold 미달 - 원위치
+    resetSwipe();
+    // 네비게이션도 현재 탭으로 복귀
+    scrollNavToIndex(getCurrentNavIndex(), true);
+  }, { passive: true });
+
+  document.addEventListener('touchcancel', function() {
+    resetSwipe();
+    scrollNavToIndex(getCurrentNavIndex(), true);
+  }, { passive: true });
+
+  function getNavScrollPosForIndex(idx) {
+    var navInner = document.querySelector('.nav-inner');
+    if (!navInner) return null;
+    var navItems = navInner.querySelectorAll('.nav-item');
+    var targetIdx = idx < 0 ? 0 : idx;
+    var targetItem = navItems[targetIdx];
+    if (!targetItem) return null;
+
+    var itemCenter = targetItem.offsetLeft + (targetItem.offsetWidth / 2);
+    var navCenter = navInner.clientWidth / 2;
+    var maxScroll = navInner.scrollWidth - navInner.clientWidth;
+    if (maxScroll <= 0) return 0;
+    return Math.max(0, Math.min(maxScroll, itemCenter - navCenter));
+  }
+
+  function animateNavToIndex(idx, durationMs) {
+    var navInner = document.querySelector('.nav-inner');
+    if (!navInner) return;
+
+    var scrollPos = getNavScrollPosForIndex(idx);
+    if (scrollPos === null || scrollPos === undefined) return;
+
+    window.__gcNavScrollOverrideLeft = scrollPos;
+    window.__gcNavScrollOverrideAt = Date.now();
+    try {
+      sessionStorage.setItem('gc_nav_scroll_state_v1', JSON.stringify({ left: scrollPos, at: Date.now() }));
+    } catch (e) {}
+
+    if (!durationMs || durationMs <= 0 || !window.requestAnimationFrame || !window.performance || !performance.now) {
+      navInner.scrollLeft = scrollPos;
+      return;
+    }
+
+    var start = navInner.scrollLeft || 0;
+    var delta = scrollPos - start;
+    if (Math.abs(delta) < 1) {
+      navInner.scrollLeft = scrollPos;
+      return;
+    }
+
+    var startTime = performance.now();
+    function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+    function step(now) {
+      var t = (now - startTime) / durationMs;
+      if (t > 1) t = 1;
+      navInner.scrollLeft = start + delta * easeOutCubic(t);
+      if (t < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  // 네비 캐러셀: 특정 인덱스로 스크롤 (-1: 홈, 0~: 섹션)
+  // nav에는 홈이 없음 (trend=0, games=1, ... metacritic=6)
+  // 1,2번 → 왼쪽 끝, 3,4,5번 → 가운데, 6,7번 → 오른쪽 끝
+  function scrollNavToIndex(idx, smooth) {
+    var navInner = document.querySelector('.nav-inner');
+    if (!navInner) return;
+    var navItems = navInner.querySelectorAll('.nav-item');
+    var targetIdx = idx < 0 ? 0 : idx;
+    var targetItem = navItems[targetIdx];
+    if (!targetItem) return;
+
+    // 아이템 중심을 nav 중심에 맞추기
+    var itemCenter = targetItem.offsetLeft + (targetItem.offsetWidth / 2);
+    var navCenter = navInner.clientWidth / 2;
+    var maxScroll = navInner.scrollWidth - navInner.clientWidth;
+    if (maxScroll <= 0) return;
+    var scrollPos = Math.max(0, Math.min(maxScroll, itemCenter - navCenter));
+
+    if (smooth && navInner.scrollTo) {
+      try {
+        navInner.scrollTo({ left: scrollPos, behavior: 'smooth' });
+        return;
+      } catch (e) {}
+    }
+    navInner.scrollLeft = scrollPos;
+  }
+
+  // 활성 탭으로 스크롤 (초기 로드는 애니메이션 없이)
+  function scrollNavToActive(smooth) {
+    scrollNavToIndex(getCurrentNavIndex(), !!smooth);
+  }
+
+  // 초기 로드 시 레이아웃/스타일 적용 전에는 값이 0으로 튈 수 있어 재시도
+  function initNavCarousel(attempt) {
+    attempt = attempt || 0;
+    var navInner = document.querySelector('.nav-inner');
+    if (!navInner) return;
+
+    if ((navInner.clientWidth <= 0 || navInner.scrollWidth <= navInner.clientWidth + 1) && attempt < 60) {
+      if (window.requestAnimationFrame) {
+        window.requestAnimationFrame(function() { initNavCarousel(attempt + 1); });
+      } else {
+        setTimeout(function() { initNavCarousel(attempt + 1); }, 16);
+      }
+      return;
+    }
+
+    var prevLeft = window.__gcNavPrevScrollLeft;
+    if (typeof prevLeft === 'number' && isFinite(prevLeft)) {
+      try { navInner.scrollLeft = prevLeft; } catch (e) {}
+    }
+
+    var shouldSmooth = window.__gcNavScrollRestored === '1';
+    scrollNavToActive(shouldSmooth);
+    window.__gcNavScrollRestored = '';
+    window.__gcNavPrevScrollLeft = null;
+  }
+
+  initNavCarousel(0);
+  window.addEventListener('pageshow', function(e) {
+    if (e && e.persisted) initNavCarousel(0);
+  });
+})();
+</script>
+  
+<script>
+(function() {
+  let lastScrollY = 0, isHidden = false;
+  function update() {
+    const currentScrollY = window.scrollY;
+    const delta = currentScrollY - lastScrollY;
+    if (currentScrollY <= 0) { if (isHidden) { document.body.classList.remove('search-hidden'); isHidden = false; } }
+    else if (delta < -10) { if (isHidden) { document.body.classList.remove('search-hidden'); isHidden = false; } }
+    else if (delta > 0 && currentScrollY > 80) { if (!isHidden) { document.body.classList.add('search-hidden'); isHidden = true; } }
+    lastScrollY = currentScrollY;
+  }
+  window.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+})();
+</script>
+</body>
+</html>

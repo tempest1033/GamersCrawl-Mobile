@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://m.gamerscrawl.com/sitemap.xml
